@@ -3,7 +3,11 @@ body, html {
     margin: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
+    height: 100vh;
+    z-index: 0;
+}
+main{
+    margin-top: 58px;
 }
 
 
