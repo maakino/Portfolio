@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFE;
+    padding-top: 52px;
+
+    &__user {
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    &__title {
+        display: flex;
+        gap: 89px;
+        align-items: end;
+        margin-bottom: 22px;
+    }
+    h2 {
+        text-align: left;
+    }
+    p {
+        font-size: 18px;
+        font-family: var(--roboto-Medium);
+        width: 363px;
+    }
+}
