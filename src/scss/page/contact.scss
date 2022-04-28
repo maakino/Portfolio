@@ -1,0 +1,70 @@
+.contact {
+    background-image: url("../../../img/background/bkg-phone.svg");
+    height: 586px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__user,
+    &__email {
+        input {
+            width: 333px;
+            height: 31px;
+            border-radius: 2px;
+            border-color: transparent;
+            font-size: 13px;
+        }    
+        }
+        &__user{
+            input{
+                background-image: url("../../../img/contact/user.svg");
+                background-repeat: no-repeat;
+                background-size: 13px;
+                background-position-x: 10px;
+                background-position-y: 6px;
+                padding-left: 28px;
+            }
+        }
+        &__email{
+            input{
+                background-image: url("../../../img/contact/email.svg");
+                background-repeat: no-repeat;
+                background-size: 13px;
+                background-position-x: 10px;
+                background-position-y: 6px;
+                padding-left: 28px;
+            
+            }
+        }
+        &__message{
+            textarea{
+                background-image: url("../../../img/contact/message.svg");
+                background-repeat: no-repeat;
+                background-size: 13px;
+                background-position-x: 10px;
+                background-position-y: 10px;
+                width: 333px;
+                height: 98px;
+                border-radius: 2px;
+                border-color: transparent;
+                font-size: 13px;
+                padding-left: 28px;
+                padding-top: 8px;
+                resize: none;
+            
+            }
+          
+        }
+        &__btn{
+            background-color: var(--btn-color);
+            color: white;
+            border-color: transparent;
+            margin: auto;
+        }
+    }
+
