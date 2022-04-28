@@ -34,3 +34,22 @@ main {
     text-decoration: none;
     font-family: var(--Raleway-ExtraBold);
 }
+
+h2{
+    font-size: 29px;
+    font-family: var(--Raleway-ExtraBold);
+    text-align: center;
+    color: #094067;
+    margin-bottom: 23px;
+}
+
+section{
+    padding: 25px 21px 25px;
+}
+.litle_title{
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--Raleway-Regular);
+    color: var(--btn-secondary-color);
+    margin-bottom: 23px;
+}
