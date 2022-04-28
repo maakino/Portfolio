@@ -1,0 +1,18 @@
+.slogan{
+    height: 281px;
+    background-image: url("../../../img/background/slogan.png");
+    background: linear-gradient(90deg, rgba(151, 150, 240, 0.3995) 0%, rgba(251, 199, 212, 0.85) 100%), url(../../../img/background/slogan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h4{
+        width: 335px;
+        font-size: 26px;
+        font-family: var(--Raleway-SemiBold);
+        color: #FFFFFE;
+        line-height: 31px;
+    }
+}
