@@ -22,7 +22,6 @@
       
     }
 }
-
 .nav__open {
     z-index: 2;
     position: fixed;
@@ -49,6 +48,7 @@
         text-decoration: none;
         color: white;
         text-align: left;
+        font-family: var(--Raleway-SemiBold);
     }
 }
 .noScroll {

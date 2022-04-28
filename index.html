@@ -9,13 +9,12 @@
     <title>Portfolio</title>
 </head>
 
-<body >
+<body>
     <!-- Header -->
     <header class="header" id="header">
         <div class="header__icon-burger">
             <img id="burger" src="img/burger.png" loading="lazy" width="32" height="32" alt="icon-menu">
         </div>
-
         <nav class="header__nav-off" id="nav">
             <img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="112" height="112" alt="logo">
             <ul class="header__menu">
@@ -36,10 +35,10 @@
                     <img src="img/Mockup group.jpg" loading="lazy" width="245" height="199" alt="mockup">
                 </div>
                 <!-- Containt -->
-                <div class="home__contain-titre">
-                    <p>Je suis <span class="home__containt-name">Equerre Teddy</span></p>
+                <div class="home__containt-titre">
+                    <p class="home__containt-text">Je suis <span class="home__containt-name">Equerre Teddy</span></p>
                     <h1>Developpeur Front-End</h1>
-                    <p>PC | Tablette | Mobile</p>
+                    <p class="home__containt-slogan">PC | Tablette | Mobile</p>
                     <div class="home__containt-reseau">
                         <a href="https://www.twitch.tv/maakyno">
                             <img src="img/reseau/logos_twitch.svg" loading="lazy" width="31" height="33"
@@ -54,11 +53,14 @@
                                 alt="icon-Github">
                         </a>
                     </div>
-                    <a class=" btn home__btn-contact" href="#contact">contacter</a>
-                    <a class=" btn home__btn-project" href="#portfolio">voir project</a>
+                    <div class="home__containt-btn">
+                        <a class=" btn home__btn-contact" href="#contact">contacter</a>
+                        <a class=" btn home__btn-project" href="#portfolio">voir project</a>
+                    </div>
+
                 </div>
             </div>
-            <a href="#portfolio">
+            <a class="home__arrow" href="#portfolio">
                 <img src="img/arrow bottom.svg" loading="lazy" width="22" height="26" alt="icon-arrow-bottom">
             </a>
         </section>
