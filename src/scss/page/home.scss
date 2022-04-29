@@ -55,10 +55,27 @@
     &__arrow {
         width: 22px;
         height: 26px;
-        img{
-          display: block;
-          margin: auto;
-          margin-top: -30px;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-top: -20px;
+            animation-duration: 3s;
+            animation-name: glissement;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
         }
+    }
+}
+
+@keyframes glissement {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
