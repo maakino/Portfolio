@@ -1,5 +1,5 @@
 .home {
-    height: 85vh;
+    height: 90vh;
     &__containt {
         height: 100%;
         display: flex;
@@ -60,7 +60,7 @@
             display: block;
             margin: auto;
             margin-top: -20px;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-name: glissement;
             animation-timing-function: ease;
             animation-iteration-count: infinite;
