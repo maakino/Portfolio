@@ -10,9 +10,13 @@
     }
     &__title {
         display: flex;
-        gap: 89px;
+      justify-content: space-between;
         align-items: end;
         margin-bottom: 22px;
+        img{
+            margin-right: 42px;
+            max-width: 78px;
+        }
     }
     h2 {
         text-align: left;
@@ -20,6 +24,5 @@
     p {
         font-size: 18px;
         font-family: var(--roboto-Medium);
-        width: 363px;
     }
 }

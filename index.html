@@ -18,7 +18,7 @@
         <nav class="header__nav-off" id="nav">
             <img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="112" height="112" alt="logo">
             <ul class="header__menu">
-                <li><a class="header__menu-links" href="#accueil">Accueil</a></li>
+                <li><a class="header__menu-links" href="#home">Accueil</a></li>
                 <li><a class="header__menu-links" href="#service">Service</a></li>
                 <li><a class="header__menu-links" href="#portfolio">Portfolio</a></li>
                 <li><a class="header__menu-links" href="#contact">Contact</a></li>
@@ -95,11 +95,12 @@
             <p class="litle_title">Ici vous pouver voir tout les services que je propose</p>
             <div class="service__card">
                 <!-- front-end -->
-                <div class="service__card-front">
+                <div class="service__card-front cards">
                     <img src="img/service/frontEnd.png" width="333" height="173" alt="ilustraion-front-end">
                     <div class="service__card-info">
                         <h3>Front-End</h3>
-                        <p class="service__card-textOn">Programation de la partie visible de l’interface utilisateur ou
+                        <p class="service__card-textOff ">Programation de la partie visible de l’interface utilisateur
+                            ou
                             d’un site web compatible
                             sur
                             PC,
@@ -107,7 +108,7 @@
                         </p>
                     </div>
 
-                    <div class="service__card-icon">
+                    <div class="service__card-icon logo-service">
                         <img src="img/service/akar-icons_html-fill.svg" loading="lazy" width="25" height="33"
                             alt="icon-html">
                         <img src="img/service/akar-icons_css-fill.svg" loading="lazy" width="25" height="33"
@@ -117,15 +118,15 @@
                     </div>
                 </div>
                 <!-- design -->
-                <div class="service__card-design">
+                <div class="service__card-design cards">
                     <img src="img/service/design.png" loading="lazy" width="333" height="173" alt="ilustraion-design">
                     <div class="service__card-info">
                         <h3>Design</h3>
-                        <p class="service__card-textOn">Création de maquette sur mesure en utilisant un outil de design qui ce nomme Figma.</p>
-                        <div class="serice__card-icon">
-                            <img src="img/service/logos_figma.svg" loading="lazy" width="25" height="37"
-                                alt="icon-figma">
-                        </div>
+                        <p class="service__card-textOff ">Création de maquette sur mesure en utilisant un outil de
+                            design qui ce nomme Figma.</p>
+                    </div>
+                    <div class="serice__card-icon  logo-service service__card-figma">
+                        <img src="img/service/logos_figma.svg" loading="lazy" width="25" height="37" alt="icon-figma">
                     </div>
 
                 </div>
@@ -138,7 +139,8 @@
         </section>
         <!-- about -->
         <section class="about">
-            <img class="about__user" src="img/a propos/Group 7.png" width="248" height="309" loading="lazy" alt="image-Equerre-Teddy">
+            <img class="about__user" src="img/a propos/Group 7.png" width="248" height="309" loading="lazy"
+                alt="image-Equerre-Teddy">
             <div class="about__title">
                 <h2>A propos</h2>
                 <img src="img/a propos/Sketch-annotation-element-brush-pen-highlight-sparkle-6.svg" width="78"
@@ -151,7 +153,7 @@
                 qui me sont accesibles. </p>
         </section>
         <!-- contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contacter moi</h2>
             <p class="litle_title">Vous avez des questions ? contacter moi ici je vous repondrer dans les plus bref
                 délais</p>
@@ -159,12 +161,12 @@
                 <!-- user -->
                 <div class="contact__user">
                     <p>Nom complet</p>
-                    <input   type="text" placeholder="Teddy">
+                    <input type="text" placeholder="Teddy">
                 </div>
                 <!-- email -->
                 <div class="contact__email">
                     <p>Email</p>
-                    <input   type="text" placeholder="Exemple@hotmail.com">
+                    <input type="text" placeholder="Exemple@hotmail.com">
                 </div>
                 <!-- message -->
                 <div class="contact__message">

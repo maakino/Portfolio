@@ -2,8 +2,7 @@
     background-image: url("../../../img/background/bkg-phone.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 586px;
-    height: 586px;
+    height: auto;
 
     &__form {
         display: flex;
@@ -15,59 +14,54 @@
 
     &__user,
     &__email {
+        width: 100%;
+        max-width: 333px;
         input {
-            width: 333px;
             height: 31px;
+            width: 100%;
             border-radius: 2px;
             border-color: transparent;
             font-size: 13px;
-        }    
-        }
-        &__user{
-            input{
-                background-image: url("../../../img/contact/user.svg");
-                background-repeat: no-repeat;
-                background-size: 13px;
-                background-position-x: 10px;
-                background-position-y: 6px;
-                padding-left: 28px;
-            }
-        }
-        &__email{
-            input{
-                background-image: url("../../../img/contact/email.svg");
-                background-repeat: no-repeat;
-                background-size: 13px;
-                background-position-x: 10px;
-                background-position-y: 6px;
-                padding-left: 28px;
-            
-            }
-        }
-        &__message{
-            textarea{
-                background-image: url("../../../img/contact/message.svg");
-                background-repeat: no-repeat;
-                background-size: 13px;
-                background-position-x: 10px;
-                background-position-y: 10px;
-                width: 333px;
-                height: 98px;
-                border-radius: 2px;
-                border-color: transparent;
-                font-size: 13px;
-                padding-left: 28px;
-                padding-top: 8px;
-                resize: none;
-            
-            }
-          
-        }
-        &__btn{
-            background-color: var(--btn-color);
-            color: white;
-            border-color: transparent;
-            margin: auto;
         }
     }
-
+    &__user {
+        input {
+            background-image: url("../../../img/contact/user.svg");
+            background-repeat: no-repeat;
+            background-size: 13px;
+            background-position-x: 10px;
+            background-position-y: 6px;
+            padding-left: 28px;
+        }
+    }
+    &__email {
+        input {
+            background-image: url("../../../img/contact/email.svg");
+            background-repeat: no-repeat;
+            background-size: 13px;
+            background-position-x: 10px;
+            background-position-y: 6px;
+            padding-left: 28px;
+        }
+    }
+    &__message {
+        max-width: 333px;
+        width: 100%;
+        textarea {
+            width: 100%;
+            height: 98px;
+            border-radius: 2px;
+            border-color: transparent;
+            font-size: 13px;
+            padding-left: 12px;
+            padding-top: 8px;
+            resize: none;
+        }
+    }
+    &__btn {
+        background-color: var(--btn-color);
+        color: white;
+        border-color: transparent;
+        margin: auto;
+    }
+}

@@ -21,6 +21,9 @@
             font-weight: 900;
         }
     }
+    &__containt-img{
+        max-width: 245px ;
+    }
     &__containt-titre {
         display: flex;
         flex-direction: column;
@@ -34,10 +37,16 @@
         font-size: 20px;
         font-family: var(--Raleway-Medium);
     }
+   
+
     &__containt-reseau {
+        img{
+            max-height: 30px;
+        }
         width: 139px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__containt-btn {
         width: 261px;
@@ -59,7 +68,7 @@
         img {
             display: block;
             margin: auto;
-            margin-top: -20px;
+            margin-top: -43px;
             animation-duration: 2s;
             animation-name: glissement;
             animation-timing-function: ease;

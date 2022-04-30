@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -60,7 +61,7 @@
     content: " ";
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background: rgba(9, 8, 8, 0.62);
 }
