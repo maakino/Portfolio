@@ -15,7 +15,7 @@
     &__user,
     &__email {
         width: 100%;
-        max-width: 333px;
+        max-width: 100%;
         input {
             height: 31px;
             width: 100%;
@@ -45,7 +45,7 @@
         }
     }
     &__message {
-        max-width: 333px;
+        max-width: 100%;
         width: 100%;
         textarea {
             width: 100%;
