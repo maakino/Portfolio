@@ -11,18 +11,28 @@
             font-size: 25px;
             color: var(--btn-color);
             font-family: var(--Raleway-Black);
+            @include media (small){
+                font-size: 44px;
+            }
         }
         h1 {
+            @include media (small){
+                font-size: 60px;
+                max-width: 396px;
+            }
             font-size: 40px;
-            width: 264px;
-            height: 94px;
+            max-width: 264px;
             font-family: var(--Raleway-Black);
             color: var(--btn-secondary-color);
             font-weight: 900;
         }
     }
     &__containt-img{
-        max-width: 245px ;
+        max-width: 245px;
+        @include media (small){
+            max-width: 413px;
+        }
+
     }
     &__containt-titre {
         display: flex;
@@ -36,9 +46,11 @@
     &__containt-slogan {
         font-size: 20px;
         font-family: var(--Raleway-Medium);
+        @include media (small){
+            font-size: 22px;
+        }
     }
    
-
     &__containt-reseau {
         img{
             max-height: 30px;
@@ -60,6 +72,9 @@
     &__btn-project {
         background-color: #fff;
         color: var(--btn-secondary-color);
+        @include media (small){
+        }
+      
     }
     &__arrow {
         width: 22px;
@@ -73,6 +88,9 @@
             animation-name: glissement;
             animation-timing-function: ease;
             animation-iteration-count: infinite;
+        @include media (small){
+            margin-top: -24px;
+        }
         }
     }
 }
