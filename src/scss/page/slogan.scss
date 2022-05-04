@@ -13,7 +13,12 @@
         font-size: 26px;
         font-family: var(--Raleway-SemiBold);
         color: #FFFFFE;
-        line-height: 31px;
+        line-height: 1.5;
         text-align: center;
+    @include media(small) {
+        max-width: 100%;
+        font-size: 37px;
+
+    }
     }
 }
