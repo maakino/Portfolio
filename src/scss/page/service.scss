@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__card{
+        max-width: 439px;
+    }
+ 
     &__card-front,  &__card-design  {
         max-width: 100%;
         background-color: #fff;
@@ -25,9 +29,12 @@
         padding-top: 53px;
         h3 {
             font-size: 32px;
-            color: #5f6c7b;
+            color: rgba(114, 198, 239, 1);
             font-family: var(--Raleway-SemiBold);
             margin-bottom: 28px;
+    @include media(small) {
+        font-size: 40px;
+    }
         }
     }
     &__card-textOff{
@@ -40,6 +47,13 @@
         flex-direction: row;
         justify-content: center;
         gap: 30px;
+    @include media(small){
+        img{
+            max-width: 50px;
+            width: 100%;
+        }
+    }
+       
     }
     &__card-figma{
         display: flex;
@@ -51,6 +65,10 @@
 .card-textOn {
     display: block;
    text-align: center;
+   padding: 0 5px;
+   @include media(small){
+       font-size: 18px;
+   }
 }
 .logo-off{
     display: none;
