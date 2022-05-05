@@ -1,22 +1,36 @@
-.portfolio{
+.portfolio {
     max-width: 100vw;
     width: 100vw;
+    height: auto;
     background-image: url("../../../img/background/bkg-phone.svg");
+    background-repeat: no-repeat;
     background-size: 100%;
-
-
-    &__galerie{
+    @include media(large) {
+        background-image: url("../../../img/background/bkgPc.svg");
+    }
+    &__galerie {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
         width: 100%;
-        img{
+        img {
             width: 80%;
-            @include media(medium){
+            @include media(medium) {
                 width: 100%;
             }
+            @include media(large) {
+                max-width: 460px;
+            }
         }
+    }
+    &__galerie-img{
+        @include media(large) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: wrap;
+        }
+        
     }
 }

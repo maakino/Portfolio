@@ -47,7 +47,6 @@ main {
         height: 58px;
     }
 }
-
 h2 {
     font-size: 29px;
     font-family: var(--Raleway-ExtraBold);
@@ -61,7 +60,6 @@ h2 {
            font-size: 36px; 
     }
 }
-
 section {
     padding: 25px 21px 25px 25px;
     @include media(small) {
@@ -69,6 +67,9 @@ section {
     }
     @include media(medium) {
         padding: 56px 129px 50px;
+    }
+    @include media(large) {
+        padding: 53px 121px 53px;
     }
 }
 .litle_title {

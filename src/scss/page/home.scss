@@ -1,17 +1,29 @@
 .home {
     margin: auto;
+    @include media(large){
+        padding: 144px 121px 50px;
+
+    }
     &__containt {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center !important;
         margin-bottom: 23px;
+        @include media(large) {
+            flex-direction: row-reverse;
+            justify-content: space-between !important;
+            align-items: center;
+        }
         p:first-child {
             font-size: 25px;
             color: var(--btn-color);
             font-family: var(--Raleway-Black);
             @include media(small) {
                 font-size: 44px;
+            }
+            @include media(large) {
+                font-size: 48px;
             }
         }
         h1 {
@@ -28,6 +40,10 @@
         @include media(medium) {
             font-size: 60px;
         }
+        @include media(large) {
+            font-size: 64px;
+        }
+
     }
     &__containt-img {
         max-width: 245px;
@@ -51,19 +67,22 @@
         @include media(small) {
             font-size: 22px;
         }
+        @include media(large) {
+            font-size: 24px;
+        }
     }
     &__containt-reseau {
         img {
             max-height: 30px;
-            @include media(medium){
-            max-height: 41px;
+            @include media(medium) {
+                max-height: 41px;
             }
         }
         width: 139px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include media(medium){
+        @include media(medium) {
             width: 191px;
         }
     }
@@ -74,7 +93,7 @@
         @include media(small) {
             width: 270px;
         }
-        @include media(medium){
+        @include media(medium) {
             width: 353px;
         }
     }
@@ -102,8 +121,8 @@
             @include media(small) {
                 margin-top: -24px;
             }
-            @include media(medium){
-            margin-top: 78px;
+            @include media(medium) {
+                margin-top: 78px;
             }
         }
     }

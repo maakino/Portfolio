@@ -2,11 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
     &__card {
         max-width: 439px;
         width: 100%;
         @include media(medium) {
             max-width: 538px;
+        }
+        @include media(large) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1138px;
+            width: 100%;
+            max-height: 521px;
+            height: 100%;
+            padding-bottom: 10px;
         }
     }
 
@@ -20,6 +31,10 @@
         margin-bottom: 66px;
         height: auto;
         padding-bottom: 10px;
+        @include media(large) {
+            margin-bottom: 0;
+        }
+
     }
     &__card-design {
         height: auto;
@@ -62,6 +77,10 @@
                 width: 100%;
             }
         }
+        @include media(large) {
+            margin-bottom: 10px;
+        }
+
     }
     &__card-figma {
         display: flex;
@@ -89,4 +108,8 @@
     @include media(medium) {
         padding-bottom: 55px;
     }
+    @include media(large) {
+        padding: 0;
+    }
+    
 }

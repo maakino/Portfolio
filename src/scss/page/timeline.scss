@@ -24,4 +24,8 @@
             text-align: left;
         }
     }
+    @include media(large) {
+        left: 1751px;
+        top: 369px;
+    }
 }
