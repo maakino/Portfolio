@@ -2,11 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__card{
+    &__card {
         max-width: 439px;
+        width: 100%;
+        @include media(medium) {
+            max-width: 538px;
+        }
     }
- 
-    &__card-front,  &__card-design  {
+
+    &__card-front,
+    &__card-design {
         max-width: 100%;
         background-color: #fff;
         filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
@@ -16,9 +21,14 @@
         height: auto;
         padding-bottom: 10px;
     }
-    &__card-design{
+    &__card-design {
         height: auto;
         padding-bottom: 10px;
+    }
+    &__card-img {
+        @include media(medium) {
+            width: 100%;
+        }
     }
     &__card-info {
         display: flex;
@@ -32,44 +42,51 @@
             color: rgba(114, 198, 239, 1);
             font-family: var(--Raleway-SemiBold);
             margin-bottom: 28px;
-    @include media(small) {
-        font-size: 40px;
-    }
+            @include media(small) {
+                font-size: 40px;
+            }
         }
     }
-    &__card-textOff{
+    &__card-textOff {
         display: none;
     }
-   
 
     &__card-icon {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 30px;
-    @include media(small){
-        img{
-            max-width: 50px;
-            width: 100%;
+        @include media(small) {
+            img {
+                max-width: 50px;
+                width: 100%;
+            }
         }
     }
-       
-    }
-    &__card-figma{
+    &__card-figma {
         display: flex;
-            justify-content: center;
-            align-items: center;
+        justify-content: center;
+        align-items: center;
     }
 }
-
 .card-textOn {
     display: block;
-   text-align: center;
-   padding: 0 5px;
-   @include media(small){
-       font-size: 18px;
-   }
+    text-align: center;
+    padding: 0 16px;
+    color: #094067;
+    @include media(small) {
+        font-size: 18px;
+    }
+    @include media(medium) {
+        font-size: 20px;
+    }
 }
-.logo-off{
+.logo-off {
     display: none;
+}
+.cards {
+    padding-bottom: 32px;
+    @include media(medium) {
+        padding-bottom: 55px;
+    }
 }
