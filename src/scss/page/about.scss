@@ -1,19 +1,23 @@
 .about {
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFE;
+    background-color: #fffffe;
     padding-top: 52px;
 
     &__user {
         margin: auto;
         margin-bottom: 70px;
+        @include media(small) {
+            max-width: 292px;
+            width: 100%;
+        }
     }
     &__title {
         display: flex;
-      justify-content: space-between;
+        justify-content: space-between;
         align-items: end;
         margin-bottom: 22px;
-        img{
+        img {
             margin-right: 42px;
             max-width: 78px;
         }

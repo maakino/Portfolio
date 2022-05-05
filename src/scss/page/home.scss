@@ -11,12 +11,12 @@
             font-size: 25px;
             color: var(--btn-color);
             font-family: var(--Raleway-Black);
-            @include media (small){
+            @include media(small) {
                 font-size: 44px;
             }
         }
         h1 {
-            @include media (small){
+            @include media(small) {
                 font-size: 60px;
                 max-width: 396px;
             }
@@ -27,12 +27,12 @@
             font-weight: 900;
         }
     }
-    &__containt-img{
+    &__containt-img {
         max-width: 245px;
-        @include media (small){
+        width: 100%;
+        @include media(small) {
             max-width: 413px;
         }
-
     }
     &__containt-titre {
         display: flex;
@@ -46,13 +46,12 @@
     &__containt-slogan {
         font-size: 20px;
         font-family: var(--Raleway-Medium);
-        @include media (small){
+        @include media(small) {
             font-size: 22px;
         }
     }
-   
     &__containt-reseau {
-        img{
+        img {
             max-height: 30px;
         }
         width: 139px;
@@ -64,6 +63,9 @@
         width: 261px;
         display: flex;
         justify-content: space-between;
+        @include media(small) {
+            width: 270px;
+        }
     }
     &__btn-contact {
         background-color: var(--btn-color);
@@ -72,14 +74,12 @@
     &__btn-project {
         background-color: #fff;
         color: var(--btn-secondary-color);
-        @include media (small){
+        @include media(small) {
         }
-      
     }
     &__arrow {
         width: 22px;
         height: 26px;
-
         img {
             display: block;
             margin: auto;
@@ -88,13 +88,12 @@
             animation-name: glissement;
             animation-timing-function: ease;
             animation-iteration-count: infinite;
-        @include media (small){
-            margin-top: -24px;
-        }
+            @include media(small) {
+                margin-top: -24px;
+            }
         }
     }
 }
-
 @keyframes glissement {
     0% {
         transform: translateY(0);

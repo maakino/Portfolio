@@ -1,4 +1,4 @@
-.footer{
+.footer {
     position: relative;
     bottom: 14px;
     background-image: url("../../../img/background/bckg_footer-mobile.png");
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 
-    &__content{
+    &__content {
         gap: 30px;
         display: flex;
         flex-direction: column;
@@ -18,18 +18,29 @@
         justify-content: center;
         gap: 30px;
 
-        h2{
+        h2 {
             font-size: 20px;
+            @include media(small) {
+                font-size: 24px;
+            }
         }
-        p{
+        p {
             font-size: 18px;
+            @include media(small) {
+                font-size: 20px;
+            }
         }
     }
 
-&__content-reseau{
-    img{
-        max-height: 30px;
-        margin-right: 20px;
+    &__content-reseau {
+        img {
+            max-height: 30px;
+            margin-right: 20px;
+            @include media(small) {
+            max-height: 39px;
+            }
+        }
+       
+        
     }
-}
 }

@@ -10,6 +10,7 @@
         gap: 25px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 29px;
     }
 
     &__user,
@@ -22,6 +23,10 @@
             border-radius: 2px;
             border-color: transparent;
             font-size: 13px;
+            @include media(small) {
+                height: 48px;
+                font-size: 15px;
+            }
         }
     }
     &__user {
@@ -32,6 +37,11 @@
             background-position-x: 10px;
             background-position-y: 6px;
             padding-left: 28px;
+            @include media(small) {
+                background-size: 21px;
+                background-position-y: 10px;
+                padding-left: 35px;
+            }
         }
     }
     &__email {
@@ -42,6 +52,11 @@
             background-position-x: 10px;
             background-position-y: 6px;
             padding-left: 28px;
+            @include media(small) {
+                background-size: 21px;
+                background-position-y: 10px;
+                padding-left: 35px;
+            }
         }
     }
     &__message {
@@ -56,6 +71,10 @@
             padding-left: 12px;
             padding-top: 8px;
             resize: none;
+            @include media(small) {
+            }
+            height: 180px;
+            font-size: 15px;
         }
     }
     &__btn {

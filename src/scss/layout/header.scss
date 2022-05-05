@@ -5,22 +5,58 @@
     flex-direction: column;
     z-index: 2;
     width: 100vw;
-
+    background-color: #094067;
+    @include media(medium) {
+        height: 144px;
+        display: block;
+        background-color: #d2e8f9;
+        position: static;
+        flex-direction: row;
+    }
     &__icon-burger {
-        background-color: #094067;
         display: flex;
         align-items: center;
         height: 58px;
-    @include media(small){
-        height: 78px;
-    }
+        @include media(small) {
+            height: 78px;
+        }
+        @include media(medium) {
+            display: none;
+        }
         img {
             margin-left: auto;
             margin-right: 21px;
+            @include media(medium) {
+                display: none;
+            }
         }
     }
     &__nav-off {
         display: none;
+        @include media(medium) {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 905px;
+            margin: auto;
+            font-family: var(--Raleway-SemiBold);
+        }
+        img {
+            max-width: 99px;
+        }
+        ul {
+            @include media(medium) {
+                display: flex;
+                flex-direction: row;
+                gap: 29px;
+                a {
+                    text-decoration: none;
+                    color: #094067;
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
 .nav__open {
@@ -38,9 +74,18 @@
     background-size: cover;
     color: white;
     height: 50vh;
-    @include media(small){
+    @include media(small) {
         height: 76vh;
         top: 78px;
+    }
+    @include media(medium) {
+        position: static;
+        background-image: none;
+        flex-direction: row;
+        height: 100%;
+        max-width: 905px;
+        justify-content: space-between;
+        margin: auto;
     }
     ul {
         display: flex;
@@ -48,8 +93,13 @@
         justify-content: space-around;
         width: 74px;
         height: 225px;
-        @include media(small){
+        @include media(small) {
             height: 453px;
+        }
+        @include media(medium) {
+            flex-direction: row;
+            height: auto;
+            width: auto;
         }
     }
     ul li a {
@@ -57,10 +107,16 @@
         color: white;
         text-align: left;
         font-family: var(--Raleway-SemiBold);
+        @include media(medium) {
+            color: #094067;
+        }
     }
 }
 .noScroll {
     overflow-y: hidden !important;
+    @include media(medium) {
+        overflow-y: scroll !important;
+    }
 }
 .noScroll::after {
     display: inline-block;
@@ -71,4 +127,7 @@
     position: fixed;
     z-index: 1;
     background: rgba(9, 8, 8, 0.62);
+    @include media(medium) {
+        display: none;
+    }
 }

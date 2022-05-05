@@ -53,6 +53,14 @@ h2 {
 
 section {
     padding: 25px 21px 25px 25px;
+    @include media(small) {
+        padding: 29px;
+    }
+    @include media(medium){
+        padding: 115px 129px;
+    }
+
+
 }
 .litle_title {
     text-align: center;
