@@ -11,6 +11,11 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 29px;
+        @include media(medium) {
+            max-width: 719px;
+            margin: auto;
+        }
+
     }
 
     &__user,
@@ -27,6 +32,13 @@
                 height: 48px;
                 font-size: 15px;
             }
+            @include media(medium) {
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 20px;
+            font-family: var( --Raleway-Regular);
         }
     }
     &__user {
@@ -57,6 +69,7 @@
                 background-position-y: 10px;
                 padding-left: 35px;
             }
+           
         }
     }
     &__message {
@@ -71,10 +84,15 @@
             padding-left: 12px;
             padding-top: 8px;
             resize: none;
-            @include media(small) {
-            }
             height: 180px;
             font-size: 15px;
+            @include media(medium) {
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 20px;
+            font-family: var( --Raleway-Regular);
         }
     }
     &__btn {
