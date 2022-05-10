@@ -51,6 +51,9 @@
         @include media(small) {
             max-width: 413px;
         }
+        @include media(large) {
+            max-width: 564px;
+        }
     }
     &__containt-titre {
         display: flex;

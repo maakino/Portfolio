@@ -15,7 +15,10 @@
             max-width: 719px;
             margin: auto;
         }
+        @include media(large) {
+            background-image: url("../../../img/background/bkg-phone.svg");
 
+        }
     }
 
     &__user,

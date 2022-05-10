@@ -42,6 +42,9 @@
             margin: auto;
             font-family: var(--Raleway-SemiBold);
         }
+        @include media(large) {
+            max-width: 1265px;
+        }
         img {
             max-width: 99px;
         }

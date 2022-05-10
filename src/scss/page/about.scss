@@ -3,7 +3,17 @@
     flex-direction: column;
     background-color: #fffffe;
     padding-top: 52px;
-
+    @include media(large) {
+        flex-direction: row;
+    }
+    &__content {
+        @include media(large) {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+        }
+    }
     &__user {
         margin: auto;
         margin-bottom: 70px;
@@ -11,12 +21,19 @@
             max-width: 292px;
             width: 100%;
         }
+        @include media(large) {
+            margin-right: 231px;
+        }
     }
     &__title {
         display: flex;
         justify-content: space-between;
         align-items: end;
         margin-bottom: 22px;
+        @include media(large) {
+            flex-direction: row;
+        }
+
         img {
             margin-right: 42px;
             max-width: 78px;
@@ -31,6 +48,5 @@
         @include media(medium) {
             font-size: 21px;
         }
-    
     }
 }

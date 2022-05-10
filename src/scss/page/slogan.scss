@@ -19,5 +19,9 @@
             max-width: 100%;
             font-size: 37px;
         }
+        @include media(large) {
+            font-size: 48px;
+        }
+
     }
 }

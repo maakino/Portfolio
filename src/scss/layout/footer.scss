@@ -9,7 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media(medium) {
+        background-image: url("../../../img/background/bckg_footer-pc.png");
 
+    }
     &__content {
         gap: 30px;
         display: flex;
