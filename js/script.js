@@ -20,12 +20,14 @@ var burger = document.getElementById('burger');
 var body = document.querySelector('body');
 var links = document.querySelectorAll('.header__menu-links');
 var cards = document.querySelectorAll('.cards');
+var header = document.querySelector('#header');
 
 
 
 function toggleNav() {
     nav.classList.toggle('nav__open');
     body.classList.toggle('noScroll');
+    header.classList.toggle('nobckg');
 }
 
 burger.addEventListener('click', toggleNav);

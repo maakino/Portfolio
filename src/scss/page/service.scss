@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
- 
+
     &__card {
         max-width: 439px;
         width: 100%;
@@ -34,7 +34,6 @@
         @include media(large) {
             margin-bottom: 0;
         }
-
     }
     &__card-design {
         height: auto;
@@ -54,7 +53,9 @@
         padding-top: 53px;
         h3 {
             font-size: 32px;
-            color: rgba(114, 198, 239, 1);
+            background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-family: var(--Raleway-SemiBold);
             margin-bottom: 28px;
             @include media(small) {
@@ -110,5 +111,20 @@
     @include media(large) {
         padding: 0;
     }
-    
+}
+.cards:hover {
+    @include media(large) {
+        max-width: 493px;
+        p {
+            display: block;
+            text-align: center;
+            padding: 0 16px 24px 16px;
+            color: #094067;
+            font-size: 20px;
+        }
+
+        .logo-service {
+            display: none;
+        }
+    }
 }

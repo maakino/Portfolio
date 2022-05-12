@@ -1,8 +1,9 @@
 .home {
     margin: auto;
-    @include media(large){
-        padding: 144px 121px 50px;
+    padding: 69px 21px 24px 25px;
 
+    @include media(medium) {
+        padding: 269px 121px 21px;
     }
     &__containt {
         display: flex;
@@ -43,7 +44,6 @@
         @include media(large) {
             font-size: 64px;
         }
-
     }
     &__containt-img {
         max-width: 245px;
@@ -107,7 +107,12 @@
     &__btn-project {
         background-color: #fff;
         color: var(--btn-secondary-color);
-        @include media(small) {
+    }
+    .home__btn-project:hover {
+        @include media(large) {
+            background-color: var(--btn-secondary-color);
+            border: none;
+            color: #fff !important;
         }
     }
     &__arrow {

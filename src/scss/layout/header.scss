@@ -5,18 +5,19 @@
     flex-direction: column;
     z-index: 2;
     width: 100vw;
-    background-color: #094067;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     @include media(medium) {
-        height: 144px;
+        height: 127px;
         display: block;
-        background-color: #d2e8f9;
-        position: static;
         flex-direction: row;
     }
     &__icon-burger {
         display: flex;
         align-items: center;
         height: 58px;
+        background-color: #fff;
+       
+
         @include media(small) {
             height: 78px;
         }
@@ -40,13 +41,17 @@
             align-items: center;
             max-width: 905px;
             margin: auto;
-            font-family: var(--Raleway-SemiBold);
+            font-family: var(--Raleway-Bold);
         }
         @include media(large) {
             max-width: 1265px;
         }
         img {
-            max-width: 99px;
+            max-width: 200px;
+            margin-bottom: 15px;
+            @include media(large) {
+                max-width: 100%;
+            }
         }
         ul {
             @include media(medium) {
@@ -54,9 +59,15 @@
                 flex-direction: row;
                 gap: 29px;
                 a {
+                    border-bottom: 3px solid transparent;
                     text-decoration: none;
-                    color: #094067;
-                    font-size: 24px;
+                    color: #4fb8f9;
+                    font-size: 22px;
+                    transition: border-bottom 0.3s;
+                }
+                a:hover {
+                    color: #4fb8f9;
+                    border-bottom: 3px solid #424242;
                 }
             }
         }
@@ -64,18 +75,18 @@
 }
 .nav__open {
     z-index: 2;
-    position: fixed;
-    top: 56px;
-    width: 100%;
+    position: sticky;
+    width: 100vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-size: 24px;
     background-image: url(../img/background/menuMobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    background-position: center;
     height: 50vh;
     @include media(small) {
         height: 76vh;
@@ -90,6 +101,10 @@
         justify-content: space-between;
         margin: auto;
     }
+    @include media(large) {
+        max-width: 1265px;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
@@ -107,11 +122,10 @@
     }
     ul li a {
         text-decoration: none;
-        color: white;
+        color: #3da9fc;
         text-align: left;
         font-family: var(--Raleway-SemiBold);
         @include media(medium) {
-            color: #094067;
         }
     }
 }
@@ -133,4 +147,7 @@
     @include media(medium) {
         display: none;
     }
+}
+.nobckg {
+    background-color: transparent;
 }
