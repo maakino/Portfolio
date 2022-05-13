@@ -7,9 +7,13 @@
         justify-content: center;
         gap: 47px;
         margin: auto;
+        @include media(small) {
+            max-width: 664px;
+        }
     }
 
     &__card-default {
+        width: 100%;
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -20,17 +24,32 @@
         background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
         box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
         border-radius: 3px;
-        
+        @include media(small) {
+            padding: 102px 51px ;
+        }
+      
         h3 {
             font-size: 24px;
             color: #fff;
             font-family: var(--Raleway-Bold);
             text-align: center;
+            @include media(small) {
+                font-size: 30px;
+            }
         }
         p {
             color: white;
             font-family: var(--roboto-Regular);
             font-size: 17px;
+            @include media(small) {
+                font-size: 22px;
+            }
+            }
+            img{
+                @include media(small) {
+                    max-width: 83px;
+                    width: 100%;
+                }
         }
     }
     &__card-design{
