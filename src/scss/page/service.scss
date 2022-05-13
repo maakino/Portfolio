@@ -13,9 +13,15 @@
         @include media(medium) {
            max-width: 740px;
         }
-    }
+        @include media(large) {
+            flex-direction: row;
+            max-width: 1194px;
 
+            gap: 47px;
+        }
+    }
     &__card-default {
+        text-align: center;
         width: 100%;
         padding: 15px;
         display: flex;
@@ -33,8 +39,10 @@
         @include media(medium) {
             padding: 176px 67px ;
         }
-      
-      
+        @include media(large) {
+            
+            padding: 217px 14px;
+        }
         h3 {
             font-size: 24px;
             color: #fff;
@@ -46,17 +54,24 @@
             @include media(small) {
                 font-size: 36px ;
             }
+            @include media(large) {
+               font-size: 24px;
+            }
         }
         p {
             color: white;
             font-family: var(--roboto-Regular);
             font-size: 17px;
+            margin: 0;
             @include media(small) {
                 font-size: 22px;
             }
             @include media(small) {
               font-size: 24px;
             }
+            @include media(large) {
+                font-size: 20px;
+             }
             }
             img{
                 @include media(small) {
