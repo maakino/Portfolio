@@ -80,6 +80,14 @@
             @include media(medium) {
                 max-height: 41px;
             }
+            @include media(large) {
+               animation-name: glissement;
+               animation-duration: 2s;
+               animation-name: glissement;
+               animation-timing-function: ease;
+          
+
+            }
         }
         width: 139px;
         display: flex;

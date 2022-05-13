@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
-
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -87,53 +85,38 @@
                 </div>
             </div>
         </section>
-
         <!-- service -->
         <section class="service" id="service">
             <h2>Mes services </h2>
             <p class="litle_title">Ici vous pouver voir tout les services que je propose</p>
-            <div class="service__card">
-                <!-- front-end -->
-                <div class="service__card-front cards">
-                    <img class="service__card-img" src="img/service/frontEnd.png" width="333" height="173"
-                        alt="ilustraion-front-end">
-                    <div class="service__card-info">
-                        <h3>Front-End</h3>
-                        <p class="service__card-textOff ">Programation de la partie visible de l’interface utilisateur
-                            ou
-                            d’un site web compatible
-                            sur
-                            PC,
-                            tablette et mobile.
-                        </p>
-                    </div>
+            
+          <div class="service__card">
+              <div class="service__card-default service__card-dev ">
+                  <img src="img/service/dev.svg" alt="icon-developpeur" loading="lazy" width="60" height="60">
+                  <h3>Développement web</h3>
+                  <p>Programation de la partie visible de l’interface utilisateur ou d’un site web.</p>
+              </div>
+              <div class="service__card-default service__card-design">
+                <img src="img/service/design.svg" alt="icon-design" loading="lazy" width="60" height="60">
+                <h3>Designer web</h3>
+                <p>Création de maquette sur mesure en utilisant un outil de design qui ce nomme Figma.</p>
+              </div>
+              <div class="service__card-default service__card-responsive">
+                <img src="img/service/responsive.svg" alt="icon-responsive" loading="lazy" width="60" height="60">
+                <h3>Responsive design</h3>
+                <p>Compatibilité des sites web
+                    sur pc, tablette et mobile</p>
+              </div>
 
-                    <div class="service__card-icon logo-service">
-                        <img src="img/service/akar-icons_html-fill.svg" loading="lazy" width="25" height="33"
-                            alt="icon-html">
-                        <img src="img/service/akar-icons_css-fill.svg" loading="lazy" width="25" height="33"
-                            alt="icon-css">
-                        <img src="img/service/vscode-icons_file-type-js-official.svg" loading="lazy" width="32"
-                            height="33" alt="icon-js">
-                    </div>
-                </div>
-                <!-- design -->
-                <div class="service__card-design cards">
-                    <img class="service__card-img" src="img/service/design.png" loading="lazy" width="333" height="173"
-                        alt="ilustraion-design">
-                    <div class="service__card-info">
-                        <h3>Design</h3>
-                        <p class="service__card-textOff ">Création de maquette sur mesure en utilisant un outil de
-                            design qui ce nomme Figma.</p>
-                    </div>
-                    <div class="serice__card-icon  logo-service service__card-figma">
-                        <img src="img/service/logos_figma.svg" loading="lazy" width="25" height="37" alt="icon-figma">
-                    </div>
+          </div>
 
-                </div>
-            </div>
+
+
+
+
+
+
         </section>
-
         <!-- slogan -->
         <section class="slogan">
             <h4>“ JE MET TOUT EN OEUVRE POUR VOUS SATISFAIRE ”</h4>
@@ -156,8 +139,6 @@
                     projets
                     qui me sont accesibles. </p>
             </div>
-
-
         </section>
         <!-- contact -->
         <section class="contact" id="contact">
@@ -187,17 +168,23 @@
     </main>
     <footer class="footer">
         <div class="footer__content">
-            <h2>Réseau sociaux</h2>
+            <img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221" height="47" alt="logo">
             <span class="footer__content-reseau">
-                <img src="img/reseau/logos_twitch.svg" width="31" height="33" loading="lazy" alt="icon-twitch">
-                <img src="img/reseau/logos_youtube-icon.svg" width="44" height="30" loading="lazy" alt="icon-youtube">
-                <img src="img/reseau/akar-icons_github-fill.svg" width="31" height="31" loading="lazy"
-                    alt="icon-github">
+                <a href="#">
+                    <img src="img/reseau/logos_twitch.svg" width="31" height="33" loading="lazy" alt="icon-twitch">
+                </a>
+                <a href="#">
+                    <img src="img/reseau/logos_youtube-icon.svg" width="44" height="30" loading="lazy"
+                        alt="icon-youtube">
+                </a>
+                <a href="#">
+                    <img src="img/reseau/akar-icons_github-fill.svg" width="31" height="31" loading="lazy"
+                        alt="icon-github">
+                </a>
             </span>
             <p class="litle_title"> © Equerre Teddy 2022</p>
         </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
-
 </html>

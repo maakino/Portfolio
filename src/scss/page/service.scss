@@ -26,6 +26,9 @@
         max-width: 100%;
         background-color: #fff;
         filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
+        @include media(large) {
+            max-width: 40%;
+        }
     }
     &__card-front {
         margin-bottom: 66px;
@@ -114,13 +117,17 @@
 }
 .cards:hover {
     @include media(large) {
-        max-width: 493px;
+        max-width: 40%;
         p {
             display: block;
             text-align: center;
             padding: 0 16px 24px 16px;
             color: #094067;
             font-size: 20px;
+        }
+        img{
+            max-height: 40%;
+            object-fit: cover;
         }
 
         .logo-service {

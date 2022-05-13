@@ -11,6 +11,8 @@
     align-items: center;
     @include media(medium) {
         background-image: url("../../../img/background/bckg_footer-pc.png");
+        height: auto;
+        padding-top: 10px;
 
     }
     &__content {
@@ -36,14 +38,23 @@
     }
 
     &__content-reseau {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            
+        a{
+            text-decoration: none;
+          
+        }
         img {
-            max-height: 30px;
-            margin-right: 20px;
-            @include media(small) {
-            max-height: 39px;
-            }
+            max-height: 19px;
+            @include media(large) {
+                max-height: 19px;
+                }
         }
        
-        
     }
 }
