@@ -20,6 +20,11 @@
             gap: 47px;
         }
     }
+    &__card-default:hover{
+        transform: scale(1.01);
+      transition-duration: 0.5s;
+
+    }
     &__card-default {
         text-align: center;
         width: 100%;
@@ -87,8 +92,4 @@
     &__card-responsive{
         background: linear-gradient(90deg, #536976 0%, #292E49 100%);
     }
-
-
-
-
 }

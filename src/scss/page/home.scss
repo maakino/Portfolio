@@ -81,13 +81,15 @@
                 max-height: 41px;
             }
             @include media(large) {
-               animation-name: glissement;
-               animation-duration: 2s;
-               animation-name: glissement;
-               animation-timing-function: ease;
-          
-
+                animation-name: glissement;
+                animation-duration: 2s;
+                animation-name: glissement;
+                animation-timing-function: ease;
             }
+        }
+        img:hover {
+            transform: scale(1.2);
+            transition-duration: 0.5s;
         }
         width: 139px;
         display: flex;
