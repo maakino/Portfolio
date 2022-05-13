@@ -10,6 +10,9 @@
         @include media(small) {
             max-width: 664px;
         }
+        @include media(medium) {
+           max-width: 740px;
+        }
     }
 
     &__card-default {
@@ -27,6 +30,10 @@
         @include media(small) {
             padding: 102px 51px ;
         }
+        @include media(medium) {
+            padding: 176px 67px ;
+        }
+      
       
         h3 {
             font-size: 24px;
@@ -36,6 +43,9 @@
             @include media(small) {
                 font-size: 30px;
             }
+            @include media(small) {
+                font-size: 36px ;
+            }
         }
         p {
             color: white;
@@ -43,6 +53,9 @@
             font-size: 17px;
             @include media(small) {
                 font-size: 22px;
+            }
+            @include media(small) {
+              font-size: 24px;
             }
             }
             img{
