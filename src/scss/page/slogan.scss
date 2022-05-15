@@ -1,8 +1,8 @@
 .slogan {
     height: 281px;
-    background-image: url("../../../img/background/slogan.png");
+    background-image: url("../img/background/slogan.png");
     background: linear-gradient(90deg, rgba(151, 150, 240, 0.3995) 0%, rgba(251, 199, 212, 0.85) 100%),
-        url(../../../img/background/slogan.png);
+        url(../img/background/slogan.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -22,6 +22,5 @@
         @include media(large) {
             font-size: 48px;
         }
-
     }
 }

@@ -1,5 +1,5 @@
 .contact {
-    background-image: url("../../../img/background/bkg-phone.svg");
+    background-image: url("../img/background/bkg-phone.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
@@ -16,7 +16,7 @@
             margin: auto;
         }
         @include media(large) {
-            background-image: url("../../../img/background/bkg-phone.svg");
+            background-image: url("../img/background/bkg-phone.svg");
 
         }
     }
@@ -46,7 +46,7 @@
     }
     &__user {
         input {
-            background-image: url("../../../img/contact/user.svg");
+            background-image: url("../img/contact/user.svg");
             background-repeat: no-repeat;
             background-size: 13px;
             background-position-x: 10px;
@@ -61,7 +61,7 @@
     }
     &__email {
         input {
-            background-image: url("../../../img/contact/email.svg");
+            background-image: url("../img/contact/email.svg");
             background-repeat: no-repeat;
             background-size: 13px;
             background-position-x: 10px;

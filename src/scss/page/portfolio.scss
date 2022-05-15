@@ -1,11 +1,11 @@
 .portfolio {
     max-width: 100vw;
     height: auto;
-    background-image: url("../../../img/background/bkg-phone.svg");
+    background-image: url("../img/background/bkg-phone.svg");
     background-repeat: no-repeat;
     background-size: cover;
     @include media(large) {
-        background-image: url("../../../img/background/bkgPc.svg");
+        background-image: url("../img/background/bkgPc.svg");
     }
     &__galerie {
         display: flex;
