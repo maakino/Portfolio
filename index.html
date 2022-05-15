@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header" id="header">
@@ -68,20 +70,13 @@
                 <h2>Portfolio</h2>
                 <p class="litle_title">Ici vous pouvez voir tout mes travaux effectuer</p>
                 <div class="portfolio__galerie-img">
-                    <img src="img/portfolio/pc 1.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/pc 2.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/pc 3.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/pc3.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/radio.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/portfolioV1.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
-                    <img src="img/portfolio/portfolioV2.png" loading="lazy" width="334" height="177"
-                        alt="maquette-site-preview">
+                    <img class="js-card" src="img/portfolio/portfolio.jpg" loading="lazy" width="334" height="177"alt="Maquette Portfolio">
+                    <img class="js-card" src="img/portfolio/cuisine-creol.png" loading="lazy" width="334" height="177"alt="maquette cuisine créol">
+                    <img class="js-card" src="img/portfolio/pc 3.png" loading="lazy" width="334" height="177"alt="maquette-site-preview">
+                    <img class="js-card" src="img/portfolio/pc3.png" loading="lazy" width="334" height="177" alt="maquette-site-preview">
+                    <img class="js-card" src="img/portfolio/radio.png" loading="lazy" width="334" height="177" alt="maquette-site-preview">
+                    <img class="js-card" src="img/portfolio/portfolioV1.png" loading="lazy" width="334" height="177" alt="maquette-site-preview">
+                    <img class="js-card" src="img/portfolio/portfolioV2.png" loading="lazy" width="334" height="177"alt="maquette-site-preview">
                 </div>
             </div>
         </section>
@@ -89,25 +84,25 @@
         <section class="service" id="service">
             <h2>Mes services </h2>
             <p class="litle_title">Ici vous pouver voir tout les services que je propose</p>
-            
-          <div class="service__card">
-              <div class="service__card-default service__card-dev ">
-                  <img src="img/service/dev.svg" alt="icon-developpeur" loading="lazy" width="60" height="60">
-                  <h3>Développement web</h3>
-                  <p>Programation de la partie visible de l’interface utilisateur ou d’un site web.</p>
-              </div>
-              <div class="service__card-default service__card-design">
-                <img src="img/service/design.svg" alt="icon-design" loading="lazy" width="60" height="60">
-                <h3>Designer web</h3>
-                <p>Création de maquette sur mesure en utilisant un outil de design qui ce nomme Figma.</p>
-              </div>
-              <div class="service__card-default service__card-responsive">
-                <img src="img/service/responsive.svg" alt="icon-responsive" loading="lazy" width="60" height="60">
-                <h3>Responsive design</h3>
-                <p>Compatibilité des sites web
-                    sur pc, tablette et mobile</p>
-              </div>
-          </div>
+
+            <div class="service__card">
+                <div class="service__card-default service__card-dev ">
+                    <img src="img/service/dev.svg" alt="icon-developpeur" loading="lazy" width="60" height="60">
+                    <h3>Développement web</h3>
+                    <p>Programation de la partie visible de l’interface utilisateur ou d’un site web.</p>
+                </div>
+                <div class="service__card-default service__card-design">
+                    <img src="img/service/design.svg" alt="icon-design" loading="lazy" width="60" height="60">
+                    <h3>Designer web</h3>
+                    <p>Création de maquette sur mesure en utilisant un outil de design qui ce nomme Figma.</p>
+                </div>
+                <div class="service__card-default service__card-responsive">
+                    <img src="img/service/responsive.svg" alt="icon-responsive" loading="lazy" width="60" height="60">
+                    <h3>Responsive design</h3>
+                    <p>Compatibilité des sites web
+                        sur pc, tablette et mobile</p>
+                </div>
+            </div>
         </section>
         <!-- slogan -->
         <section class="slogan">
@@ -177,6 +172,19 @@
             <p class="litle_title"> © Equerre Teddy 2022</p>
         </div>
     </footer>
+    <dialog class=" js-popin popin">
+        <div class="popin__container">
+            <header class="popin__header">
+                <h2 class="popin__title js-title">Maquette portfolio</h2>
+                <button class="popin__close js-btn">✖</button>
+            </header>
+            <div class="popin__img">
+                <img class="js-img" src="img/portfolio/full-size/Portfolio.jpg"  alt="maquette portfolio" width="1920"
+                height="1080" loading="lazy">
+            </div>
+        </div>
+    </dialog>
     <script src="js/script.js"></script>
 </body>
+
 </html>

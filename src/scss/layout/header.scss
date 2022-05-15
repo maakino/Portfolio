@@ -1,10 +1,12 @@
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     @include media(medium) {
         height: 127px;
@@ -131,12 +133,15 @@
     }
 }
 .noScroll {
-    overflow-y: hidden !important;
+    overflow-y: hidden;
+}
+.nav-open{
+    overflow-y: hidden ;
     @include media(medium) {
-        overflow-y: scroll !important;
+        overflow-y: auto;
     }
 }
-.noScroll::after {
+.nav-open::after {
     display: inline-block;
     top: 0;
     content: " ";
@@ -151,4 +156,7 @@
 }
 .nobckg {
     background-color: transparent;
+    @include media(medium) {
+        background-color: white;
+    }
 }

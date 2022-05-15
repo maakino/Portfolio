@@ -45,8 +45,9 @@
             padding: 176px 67px ;
         }
         @include media(large) {
-            
-            padding: 217px 14px;
+            height: 458px;
+            padding: 0 14px;
+
         }
         h3 {
             font-size: 24px;

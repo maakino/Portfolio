@@ -15,6 +15,7 @@
         gap: 10px;
         width: 100%;
         img {
+            cursor: pointer;
             width: 100%;
             @include media(medium) {
                 width: 100%;
@@ -25,13 +26,16 @@
         }
     }
     &__galerie-img {
+        img:hover{
+            transform: scale(1.01);
+            transition-duration: 0.5s;
+        }
         @include media(large) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             flex-wrap: wrap;
         }
-    
             text-align: center;
-    
+         
     }
 }
