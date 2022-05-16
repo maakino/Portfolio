@@ -65,7 +65,7 @@
             </a>
         </section>
         <!-- Portfolio -->
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio top_circle" id="portfolio">
             <div class="portfolio__galerie">
                 <h2>Portfolio</h2>
                 <p class="litle_title">Ici vous pouvez voir tout mes travaux effectués</p>
@@ -127,32 +127,34 @@
             </div>
         </section>
         <!-- contact -->
-        <section class="contact" id="contact">
+        <section class="contact top_circle" id="contact">
             <h2>Contactez moi</h2>
             <p class="litle_title">Vous avez des questions ? contactez moi ici je vous repondrais dans les plus bref
                 délais</p>
-            <form class="contact__form" action="post">
+                <div id="my-form-status" class="contact__status"></div>
+            <form class="contact__form"  id="my-form" action="https://formspree.io/f/mayvaanl"
+            method="POST">
                 <!-- user -->
                 <div class="contact__user">
                     <p>Nom complet</p>
-                    <input type="text" placeholder="Teddy">
+                    <input type="text" name="nom" placeholder="Teddy">
                 </div>
                 <!-- email -->
                 <div class="contact__email">
                     <p>Email</p>
-                    <input type="email" placeholder="Exemple@hotmail.com">
+                    <input type="email" name="email" placeholder="Exemple@hotmail.com">
                 </div>
                 <!-- message -->
                 <div class="contact__message">
                     <p>Nom complet</p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
                 </div>
                 <!-- button -->
                 <input class="btn contact__btn" type="submit" value="Envoyer">
             </form>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer top_circle top_circle--white">
         <div class="footer__content">
             <img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221" height="47" alt="logo">
             <span class="footer__content-reseau">

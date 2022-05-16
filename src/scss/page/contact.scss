@@ -1,9 +1,4 @@
 .contact {
-    background-image: url("../img/background/bkg-phone.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: auto;
-
     &__form {
         display: flex;
         flex-direction: column;
@@ -15,12 +10,7 @@
             max-width: 719px;
             margin: auto;
         }
-        @include media(large) {
-            background-image: url("../img/background/bkg-phone.svg");
-
-        }
     }
-
     &__user,
     &__email {
         width: 100%;
@@ -39,9 +29,9 @@
                 font-size: 20px;
             }
         }
-        p{
+        p {
             font-size: 20px;
-            font-family: var( --Raleway-Regular);
+            font-family: var(--Raleway-Regular);
         }
     }
     &__user {
@@ -72,7 +62,6 @@
                 background-position-y: 10px;
                 padding-left: 35px;
             }
-           
         }
     }
     &__message {
@@ -93,9 +82,9 @@
                 font-size: 20px;
             }
         }
-        p{
+        p {
             font-size: 20px;
-            font-family: var( --Raleway-Regular);
+            font-family: var(--Raleway-Regular);
         }
     }
     &__btn {
@@ -103,5 +92,23 @@
         color: white;
         border-color: transparent;
         margin: auto;
+    }
+    &__status {
+        border-radius: 3px;
+        padding: 10px;
+        color: var(--btn-secondary-color);
+        width: 100%;
+        max-width: 719px;
+        margin: auto;
+        margin-bottom: 23px;
+        font-family: var(--Raleway-Bold);
+        &.succes {
+            border: 2px solid rgb(4, 147, 4);
+            color:rgb(4, 147, 4) ;
+        }
+        &.error {
+            border: 2px solid rgb(204, 44, 4);
+            color:rgb(204, 44, 4);
+        }
     }
 }

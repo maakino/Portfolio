@@ -9,21 +9,19 @@
     width: 100%;
     box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     @include media(medium) {
-        height: 127px;
+        height: 100px;
         display: block;
         flex-direction: row;
         background-color: #fff;
     }
+   
     &__icon-burger {
         display: flex;
         align-items: center;
         height: 40px;
         background-color: #fff;
-        margin-bottom: 5px;
-       
         @include media(small) {
             height: 78px;
-            margin-bottom: 30px;
         }
         @include media(medium) {
             display: none;
@@ -55,6 +53,7 @@
             margin-bottom: 15px;
             @include media(large) {
                 max-width: 100%;
+                margin: 0;
             }
         }
         ul {
@@ -78,20 +77,29 @@
     }
 }
 .nav__open {
+    border-top: 1px solid #3da9fc;
+    background-color: white;
     z-index: 2;
     position: sticky;
-    width: 97%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    background-image: url(../img/background/menuMobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
     height: 50vh;
+    &::before {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: "";
+        width: 100%;
+        display: block;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+    }
     @include media(small) {
         height: 69vh;
     }
@@ -106,6 +114,9 @@
     }
     @include media(large) {
         max-width: 1265px;
+    &::before {
+        display: none;
+    }
     }
 
     ul {
@@ -135,8 +146,8 @@
 .noScroll {
     overflow-y: hidden;
 }
-.nav-open{
-    overflow-y: hidden ;
+.nav-open {
+    overflow-y: hidden;
     @include media(medium) {
         overflow-y: auto;
     }
