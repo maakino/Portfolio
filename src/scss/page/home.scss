@@ -3,8 +3,7 @@
     padding: 69px 21px 24px 25px;
 
     @include media(medium) {
-        padding: 154px 121px 21px;
-    }
+        padding: 102px 121px 4px;    }
     &__containt {
         display: flex;
         flex-direction: column;
