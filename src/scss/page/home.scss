@@ -3,7 +3,11 @@
     padding: 1px 21px 24px 25px;
 
     @include media(medium) {
-        padding: 102px 121px 4px;    }
+        padding: 39px 121px 1px;;    
+    }
+    @include media(large){
+        padding: 119px 121px 1px;
+    }
     &__containt {
         display: flex;
         flex-direction: column;
