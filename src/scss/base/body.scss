@@ -10,23 +10,29 @@ html {
     background-color: white;
     --btn-color: #3da9fc;
     --btn-secondary-color: #094067;
-    --roboto-Medium: "roboto-Medium";
-    --roboto-Regular: "roboto-Regular";
-    --Raleway-Black: "Raleway-Black";
-    --Raleway-Bold: "Raleway-Bold";
-    --Raleway-ExtraBold: "Raleway-ExtraBold";
-    --Raleway-Medium: "Raleway-Medium";
-    --Raleway-Regular: "Raleway-Regular";
-    --Raleway-SemiBold: "Raleway-SemiBold";
+    --roboto-Medium: "roboto-Medium" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --roboto-Regular: "roboto-Regular" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-Black: "Raleway-Black" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-Bold: "Raleway-Bold" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-ExtraBold: "Raleway-ExtraBold" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-Medium: "Raleway-Medium" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-Regular: "Raleway-Regular" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Raleway-SemiBold: "Raleway-SemiBold" sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 main {
     margin-top: 58px;
     @include media(medium) {
         margin: 0;
     }
 }
-
 .btn {
     width: 119px;
     height: 43px;
@@ -121,9 +127,8 @@ p {
     }
     &--white {
         background-color: white;
-        &::before{
-        background-color: white;
-
+        &::before {
+            background-color: white;
         }
     }
 }
