@@ -56,7 +56,7 @@ main {
         height: 58px;
     }
 }
-@include media(large) {
+@include media(medium) {
     .btn:hover {
         background-color: transparent;
         border: 1px solid #3da9fc;
