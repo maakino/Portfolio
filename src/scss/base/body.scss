@@ -28,9 +28,9 @@ html {
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 main {
-    margin-top: 58px;
-    @include media(medium) {
-        margin: 0;
+    margin-top: 27px;
+    @include media(small) {
+        margin:10px;
     }
 }
 .btn {
