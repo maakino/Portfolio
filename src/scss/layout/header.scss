@@ -146,6 +146,7 @@
 .noScroll {
     overflow-y: hidden;
 }
+
 .nav-open {
     overflow-y: hidden;
     @include media(medium) {
