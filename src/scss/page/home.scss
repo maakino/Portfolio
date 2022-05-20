@@ -3,7 +3,8 @@
     padding: 1px 21px 24px 25px;
 
     @include media(medium) {
-        padding: 39px 121px 1px;;    
+        padding: 39px 121px 1px;
+              
     }
     @include media(large){
         padding: 119px 121px 1px;
