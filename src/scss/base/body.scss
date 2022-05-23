@@ -1,8 +1,6 @@
 body,
 html {
     position: relative;
-    max-width: 1920px;
-    margin: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100vh;
@@ -30,7 +28,7 @@ html {
 main {
     margin-top: 27px;
     @include media(small) {
-        margin:10px;
+        /* margin:10px; */
     }
 }
 .btn {
@@ -131,4 +129,12 @@ p {
             background-color: white;
         }
     }
+}
+.content{
+    max-width: 1920px;
+    margin: auto;
+}
+.content-header{
+    height: 100%;
+
 }

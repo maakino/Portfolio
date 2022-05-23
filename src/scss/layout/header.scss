@@ -1,20 +1,23 @@
-.header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+.content-header{
+    max-width: 1920px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    z-index: 2;
-    width: 100%;
-    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     @include media(medium) {
         height: 100px;
         display: block;
         flex-direction: row;
-        background-color: #fff;
     }
-   
+}
+.header {
+    background-color: #fff;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
     &__icon-burger {
         display: flex;
         align-items: center;

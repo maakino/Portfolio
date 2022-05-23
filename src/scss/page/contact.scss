@@ -92,6 +92,12 @@
         color: white;
         border-color: transparent;
         margin: auto;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: var(--btn-color);
+            border: none;
+        }
     }
     &__status {
         border-radius: 3px;
