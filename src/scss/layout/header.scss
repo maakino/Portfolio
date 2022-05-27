@@ -126,7 +126,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 74px;
         height: 225px;
         @include media(small) {
             height: 453px;

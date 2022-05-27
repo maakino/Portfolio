@@ -123,11 +123,11 @@
     }
     &__btn-project {
         background-color: #fff;
-        color: var(--btn-secondary-color);
+        color: var(--btn-color);
     }
     .home__btn-project:hover {
         @include media(large) {
-            background-color: var(--btn-secondary-color);
+            background-color: var(--btn-color);
             border: none;
             color: #fff !important;
         }
