@@ -98,12 +98,12 @@
             transform: scale(1.2);
             transition-duration: 0.5s;
         }
-        width: 139px;
+        width: 187px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         @include media(medium) {
-            width: 191px;
+            width: 226px;
         }
     }
     &__containt-btn {
