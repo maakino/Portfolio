@@ -54,9 +54,11 @@
 					<!-- Img -->
 					<div class="home__containt-img">
 						<picture>
-							<img srcset="img/mockup/mockup-245w.png 245w,
-																											                            img/mockup/mockup-564w.png 564w"
-								src="img/mockup/mockup-245w.png" alt="mockup" width="245" height="200">
+							<source srcset="img/mockup/mockup-564w.png 564w">
+
+							<source srcset="img/mockup/mockup-245w.png 245w">
+
+							<img src="img/mockup/mockup-245w.png" alt="mockup" width="245" height="200" loading="lazy">
 						</picture>
 					</div>
 					<!-- Containt -->
@@ -106,42 +108,54 @@
 				<p class="litle_title">Ici vous pouvez voir tout mes travaux effectués</p>
 				<div class="portfolio__galerie-img">
 					<picture loading="lazy">
+						<source srcset=" img/portfolio/portfolio-offi-555w.png 555w">
+						<source srcset="img/portfolio/portfolio-offi-368w.png 368w">
+						<source srcset="img/portfolio/portfolio-offi-460w.png 460w">
+
+
 						<img class="js-card" src="img/portfolio/portfolio-offi-460w.png" alt="Maquette Portfolio"
-							srcset="img/portfolio/portfolio-offi-368w.png 368w, img/portfolio/portfolio-offi-460w.png 460w, img/portfolio/portfolio-offi-555w.png 555w
-																						                                    " loading="lazy" width="368" height="210">
-					</picture>
-					<picture>
-						<img class="js-card" src="img/portfolio/cuisine-creol-460w.png" alt="Maquette cuisine créol"
-							srcset="img/portfolio/cuisine-creol-555w.png 555w,
-																						                                    img/portfolio/cuisine-creol-460w.png 460w,
-																						                                    img/portfolio/cuisine-creol-368w.png 368w" width="368"
-							height="210">
-					</picture>
-					<picture>
-						<img class="js-card" src="img/portfolio/hotel-460w.png" alt="Maquette hotel" srcset="img/portfolio/hotel-555w.png 555w,
-																						                                                    img/portfolio/hotel-460w.png 460w,
-																						                                                    img/portfolio/hotel-368w.png 368w"
 							loading="lazy" width="368" height="210">
 					</picture>
-					<picture loading="lazy">
-						<img class="js-card" src="img/portfolio/jolie-coeur-460w.png" alt="Maquette site apprenant"
-							srcset="img/portfolio/jolie-coeur-555w.png 555w,
-																						                                    img/portfolio/jolie-coeur-460w.png 460w,
-																						                                    img/portfolio/jolie-coeur-368w.png 368w" width="368"
-							height="210">
+					<picture>
+						<source srcset="img/portfolio/cuisine-creol-555w.png 555w">
+						<source srcset=" img/portfolio/cuisine-creol-460w.png 460w">
+						<source srcset=" img/portfolio/cuisine-creol-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/cuisine-creol-460w.png" alt="Maquette cuisine créol"
+							width="368" height="210" loading="lazy">
+					</picture>
+					<picture>
+						<source srcset="img/portfolio/hotel-555w.png 555w">
+						<source srcset="img/portfolio/hotel-460w.png 460w">
+						<source srcset=" img/portfolio/hotel-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/hotel-460w.png" alt="Maquette hotel" width="368"
+							height="210" loading="lazy">
 					</picture>
 					<picture loading="lazy">
-						<img class="js-card" src="img/portfolio/l'oasis-460w.png" alt="Maquette radio L'oasis" srcset="img/portfolio/l'oasis-555w.png 555w,
-																						                                                  img/portfolio/l'oasis-460w.png 460w,
-																						                                                  img/portfolio/l'oasis-368w.png 368w"
+						<source srcset="img/portfolio/jolie-coeur-555w.png 555w">
+						<source srcset="img/portfolio/jolie-coeur-460w.png 460w">
+						<source srcset="img/portfolio/jolie-coeur-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/jolie-coeur-460w.png" alt="Maquette site apprenant"
 							width="368" height="210">
 					</picture>
-					<picture loading="lazy">
+
+					<picture>
+						<source srcset="img/portfolio/l'oasis-555w.png 555w">
+						<source srcset="img/portfolio/l'oasis-460w.png 460w">
+						<source srcset="img/portfolio/l'oasis-368w.png 368w">
+						<img class="js-card" src="img/portfolio/l'oasis-460w.png" alt="Maquette radio L'oasis"
+							width="368" height="210" loading="lazy">
+					</picture>
+
+					<picture>
+						<source srcset="img/portfolio/portfolio-v1-555w.png 555w">
+						<source srcset="img/portfolio/portfolio-v1-460w.png 460w">
+						<source srcset=" img/portfolio/portfolio-v1-368w.png 368w">
+
 						<img class="js-card" src="img/portfolio/portfolio-v1-460w.png"
-							alt="Maquette de mon ancien-portfolio" srcset="img/portfolio/portfolio-v1-555w.png 555w,
-																						                                    img/portfolio/portfolio-v1-460w.png 460w,
-																						                                    img/portfolio/portfolio-v1-368w.png 368w" width="368"
-							height="210">
+							alt="Maquette de mon ancien-portfolio" width="368" height="210" loading="lazy">
 					</picture>
 				</div>
 			</div>
