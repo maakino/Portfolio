@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Voici mon portfolio avec tout les services que je propose"/>
-		<meta name="author" content="Equerre Teddy"/>
-		<meta property="og:description" content="Portfolio dévelopeur web front-end ">
-		<meta property="og:type" content="website">
-		<meta property="og:locale" content="fr_FR">
-		<meta property="og:title" content="Accueil">
-		<meta property="og:site_name" content="Ty developper">
-		<meta property="og:image" content="/img/logo/logo.png">
-		<link rel="stylesheet" href="css/style.css" onload="if(media!='all')media='all'">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-		<title>tydevelopper Portfolio</title>
-	</head>
 
-	<body
-		id="body">
-		<!-- Header -->
-		<header class="header" id="header">
-			<div class="content content-header">
-				<div class="header__icon-burger">
-					<img id="burger" src="img/burger.svg" loading="lazy" width="32" height="32" alt="icon-menu">
-				</div>
-				<nav class="header__nav-off" id="nav">
-					<a href="#home"><img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221" height="47" alt="logo"></a>
-					<ul class="header__menu">
-						<li>
-							<a class="header__menu-links" href="#home">Accueil</a>
-						</li>
-						<li>
-							<a class="header__menu-links" href="#portfolio">Portfolio</a>
-						</li>
-						<li>
-							<a class="header__menu-links" href="#service">Services</a>
-						</li>
-						<li>
-							<a class="header__menu-links" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Voici mon portfolio avec tout les services que je propose" />
+	<meta name="author" content="Equerre Teddy" />
+	<meta property="og:description" content="Portfolio dévelopeur web front-end ">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:title" content="Accueil">
+	<meta property="og:site_name" content="Ty developper">
+	<meta property="og:image" content="/img/logo/logo.png">
+	<link rel="stylesheet" href="css/style.css" onload="if(media!='all')media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<title>tydevelopper Portfolio</title>
+</head>
+
+<body id="body">
+	<!-- Header -->
+	<header class="header" id="header">
+		<div class="content content-header">
+			<div class="header__icon-burger">
+				<img id="burger" src="img/burger.svg" loading="lazy" width="32" height="32" alt="icon-menu">
 			</div>
-		</header>
-		<!-- Main -->
-		<main>
-			<!--accueil -->
-			<section class="home" id="home">
-				<div class="content">
-					<div
-						class="home__containt">
-						<!-- Img -->
-						<div class="home__containt-img">
-							<picture>
-								<img srcset="img/mockup/mockup-245w.png 245w,
-																											                            img/mockup/mockup-564w.png 564w" src="img/mockup/mockup-245w.png" alt="mockup" width="245" height="200">
-							</picture>
-						</div>
-						<!-- Containt -->
-						<div class="home__containt-titre">
-							<p class="home__containt-text">Je suis
-								<span class="home__containt-name">Equerre Teddy</span>
-							</p>
-							<h1>Developpeur Front-End</h1>
-							<p class="home__containt-slogan">PC | Tablette | Mobile</p>
-							<div class="home__containt-reseau"></a>
+			<nav class="header__nav-off" id="nav">
+				<a href="#home"><img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221"
+						height="47" alt="logo"></a>
+				<ul class="header__menu">
+					<li>
+						<a class="header__menu-links" href="#home">Accueil</a>
+					</li>
+					<li>
+						<a class="header__menu-links" href="#portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a class="header__menu-links" href="#service">Services</a>
+					</li>
+					<li>
+						<a class="header__menu-links" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Main -->
+	<main>
+		<!--accueil -->
+		<section class="home" id="home">
+			<div class="content">
+				<div class="home__containt">
+					<!-- Img -->
+					<div class="home__containt-img">
+						<picture>
+							<source srcset="img/mockup/mockup-564w.png 564w">
+
+							<source srcset="img/mockup/mockup-245w.png 245w">
+
+							<img src="img/mockup/mockup-245w.png" alt="mockup" width="245" height="200" loading="lazy">
+						</picture>
+					</div>
+					<!-- Containt -->
+					<div class="home__containt-titre">
+						<p class="home__containt-text">Je suis
+							<span class="home__containt-name">Equerre Teddy</span>
+						</p>
+						<h1>Developpeur Front-End</h1>
+						<p class="home__containt-slogan">PC | Tablette | Mobile</p>
+						<div class="home__containt-reseau"></a>
 							<a href="https://www.linkedin.com/in/teddy-equerre-514a781a2">
-								<img src="img/reseau-sociaux/linkedin.svg" loading="lazy" width="43" height="43" alt="icon-linkedin">
+								<img src="img/reseau-sociaux/linkedin.svg" loading="lazy" width="43" height="43"
+									alt="icon-linkedin">
 							</a>
 							<a href="https://github.com/maakino">
-								<img src="img/reseau/akar-icons_github-fill.svg" loading="lazy" width="31" height="31" alt="icon-Github">
+								<img src="img/reseau/akar-icons_github-fill.svg" loading="lazy" width="31" height="31"
+									alt="icon-Github">
 							</a>
 							<a href="https://www.instagram.com/ty_developper/">
-								<img src="img/reseau-sociaux/instagram.svg" loading="lazy" width="43" height="30" alt="icon-Youtube">
+								<img src="img/reseau-sociaux/instagram.svg" loading="lazy" width="43" height="30"
+									alt="icon-Youtube">
 							</a>
 							<a href="https://www.twitch.tv/maakyno">
-								<img src="img/reseau/logos_twitch.svg" loading="lazy" width="31" height="33" alt="icon-Twitch">
+								<img src="img/reseau/logos_twitch.svg" loading="lazy" width="31" height="33"
+									alt="icon-Twitch">
 							</a>
 
 
@@ -98,38 +105,57 @@
 		<section class="portfolio top_circle" id="portfolio">
 			<div class="portfolio__galerie">
 				<h2>Portfolio</h2>
-				<p class="litle_title">Ici vous pouvez voir tout mes travaux effectués</p>
+				<p class="litle_title">Ici vous trouverez tous mes travaux effectués</p>
 				<div class="portfolio__galerie-img">
-					<picture>
-						<img class="js-card" src="img/portfolio/portfolio-offi-460w.png" alt="Maquette Portfolio" srcset="img/portfolio/portfolio-offi-368w.png 368w,
-																						                                    img/portfolio/portfolio-offi-460w.png 460w,
-																						                                    img/portfolio/portfolio-offi-555w.png 555w
-																						                                    " loading="lazy" width="368" height="210">
+					<picture loading="lazy">
+						<source srcset=" img/portfolio/portfolio-offi-555w.png 555w">
+						<source srcset="img/portfolio/portfolio-offi-368w.png 368w">
+						<source srcset="img/portfolio/portfolio-offi-460w.png 460w">
+
+
+						<img class="js-card" src="img/portfolio/portfolio-offi-460w.png" alt="Maquette Portfolio"
+							loading="lazy" width="368" height="210">
 					</picture>
 					<picture>
-						<img class="js-card" src="img/portfolio/cuisine-creol-460w.png" alt="Maquette cuisine créol" srcset="img/portfolio/cuisine-creol-555w.png 555w,
-																						                                    img/portfolio/cuisine-creol-460w.png 460w,
-																						                                    img/portfolio/cuisine-creol-368w.png 368w" loading="lazy" width="368" height="210">
+						<source srcset="img/portfolio/cuisine-creol-555w.png 555w">
+						<source srcset=" img/portfolio/cuisine-creol-460w.png 460w">
+						<source srcset=" img/portfolio/cuisine-creol-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/cuisine-creol-460w.png" alt="Maquette cuisine créol"
+							width="368" height="210" loading="lazy">
 					</picture>
 					<picture>
-						<img class="js-card" src="img/portfolio/hotel-460w.png" alt="Maquette hotel" srcset="img/portfolio/hotel-555w.png 555w,
-																						                                                    img/portfolio/hotel-460w.png 460w,
-																						                                                    img/portfolio/hotel-368w.png 368w" loading="lazy" width="368" height="210">
+						<source srcset="img/portfolio/hotel-555w.png 555w">
+						<source srcset="img/portfolio/hotel-460w.png 460w">
+						<source srcset=" img/portfolio/hotel-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/hotel-460w.png" alt="Maquette hotel" width="368"
+							height="210" loading="lazy">
 					</picture>
-					<picture>
-						<img class="js-card" src="img/portfolio/jolie-coeur-460w.png" alt="Maquette site apprenant" srcset="img/portfolio/jolie-coeur-555w.png 555w,
-																						                                    img/portfolio/jolie-coeur-460w.png 460w,
-																						                                    img/portfolio/jolie-coeur-368w.png 368w" loading="lazy" width="368" height="210">
+					<picture loading="lazy">
+						<source srcset="img/portfolio/jolie-coeur-555w.png 555w">
+						<source srcset="img/portfolio/jolie-coeur-460w.png 460w">
+						<source srcset="img/portfolio/jolie-coeur-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/jolie-coeur-460w.png" alt="Maquette site apprenant"
+							width="368" height="210">
 					</picture>
+
 					<picture>
-						<img class="js-card" src="img/portfolio/l'oasis-460w.png" alt="Maquette radio L'oasis" srcset="img/portfolio/l'oasis-555w.png 555w,
-																						                                                  img/portfolio/l'oasis-460w.png 460w,
-																						                                                  img/portfolio/l'oasis-368w.png 368w" loading="lazy" width="368" height="210">
+						<source srcset="img/portfolio/l'oasis-555w.png 555w">
+						<source srcset="img/portfolio/l'oasis-460w.png 460w">
+						<source srcset="img/portfolio/l'oasis-368w.png 368w">
+						<img class="js-card" src="img/portfolio/l'oasis-460w.png" alt="Maquette radio L'oasis"
+							width="368" height="210" loading="lazy">
 					</picture>
+
 					<picture>
-						<img class="js-card" src="img/portfolio/portfolio-v1-460w.png" alt="Maquette de mon ancien-portfolio" srcset="img/portfolio/portfolio-v1-555w.png 555w,
-																						                                    img/portfolio/portfolio-v1-460w.png 460w,
-																						                                    img/portfolio/portfolio-v1-368w.png 368w" loading="lazy" width="368" height="210">
+						<source srcset="img/portfolio/portfolio-v1-555w.png 555w">
+						<source srcset="img/portfolio/portfolio-v1-460w.png 460w">
+						<source srcset=" img/portfolio/portfolio-v1-368w.png 368w">
+
+						<img class="js-card" src="img/portfolio/portfolio-v1-460w.png"
+							alt="Maquette de mon ancien-portfolio" width="368" height="210" loading="lazy">
 					</picture>
 				</div>
 			</div>
@@ -139,7 +165,7 @@
 			<div class="content">
 				<h2>Mes services
 				</h2>
-				<p class="litle_title">Ici vous pouvez voir tout les services que je propose</p>
+				<p class="litle_title">Ici vous pouvez voir tous les services que je propose</p>
 
 				<div class="service__card">
 					<div class="service__card-default service__card-dev ">
@@ -153,10 +179,10 @@
 						<p>Création de maquette sur mesure en utilisant Figma.</p>
 					</div>
 					<div class="service__card-default service__card-responsive">
-						<img src="img/service/responsive.svg" alt="icon-responsive" loading="lazy" width="60" height="60">
+						<img src="img/service/responsive.svg" alt="icon-responsive" loading="lazy" width="60"
+							height="60">
 						<h3>Responsive design</h3>
-						<p>Compatibilité des sites web
-																						                            sur pc, tablette et mobile</p>
+						<p>Compatibilité des sites web sur PC, tablette et mobile.</p>
 					</div>
 				</div>
 			</div>
@@ -171,20 +197,16 @@
 		<!-- about -->
 		<section class="about">
 			<div class="about-content ">
-				<img class="about__user" src="img/a propos/Group 7.png" width="248" height="309" loading="lazy" alt="image-Equerre-Teddy">
+				<img class="about__user" src="img/a propos/Group 7.png" width="248" height="309" loading="lazy"
+					alt="image-Equerre-Teddy">
 				<div class="about__content">
 					<div class="about__title">
 						<h2>A propos</h2>
-						<img src="img/a propos/Sketch-annotation-element-brush-pen-highlight-sparkle-6.svg" width="78" height="78" loading="lazy" alt="ilustration">
+						<img src="img/a propos/Sketch-annotation-element-brush-pen-highlight-sparkle-6.svg" width="78"
+							height="78" loading="lazy" alt="ilustration">
 					</div>
-					<p>Originaire de l’île de la Réunion je suis un passionné de l'informatique , qui se forme seul en
-																			                        temps
-																			                        que
-																			                        développeur web Front-End.
-																			
-																			                        Je mets mes compétences à votre service afin de répondre à vos attentes tout en acceptant des
-																			                        projets
-																			                        qui me sont accesibles.
+					<p>Originaire de l’île de la Réunion je suis un passionné de l'informatique, qui se forme seul en tant que développeur web Front-End. Je mets mes compétences à votre service afin de répondre à vos attentes tout en acceptant des projets qui me sont accessibles.
+
 					</p>
 				</div>
 			</div>
@@ -194,13 +216,10 @@
 		<section class="contact top_circle" id="contact">
 			<div class="content">
 				<div class="content">
-					<h2>Contactez moi</h2>
-					<p class="litle_title">Vous avez des questions ? contactez moi ici je vous repondrais dans les plus
-																			                        bref
-																			                        délais</p>
+					<h2>Contactez-moi</h2>
+					<p class="litle_title">Vous avez des questions ? Contactez-moi ici je vous répondrais dans les plus brefs délais</p>
 					<div id="my-form-status" class="contact__status"></div>
-					<form
-						class="contact__form" id="my-form" action="https://formspree.io/f/mayvaanl" method="POST">
+					<form class="contact__form" id="my-form" action="https://formspree.io/f/mayvaanl" method="POST">
 						<!-- user -->
 						<div class="contact__user">
 							<p>Nom complet</p>
@@ -224,38 +243,52 @@
 
 
 		</section>
-	</body>
-</html></main><footer class="footer top_circle top_circle--white">
-<div class="content">
-	<div class="footer__content">
-		<img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221" height="47" alt="logo">
-		<span class="footer__content-reseau">
-			<a href="https://www.linkedin.com/in/teddy-equerre-514a781a2">
-				<img src="img/reseau-sociaux/linkedin.svg" loading="lazy" width="43" height="43" alt="icon-linkedin">
-			</a>
-				<a href="https://github.com/maakino">
-				<img src="img/reseau/akar-icons_github-fill.svg" width="31" height="31" loading="lazy" alt="icon-github">
-			</a>
-				<a href="https://www.instagram.com/ty_developper/">
-				<img src="img/reseau-sociaux/instagram.svg" width="44" height="30" loading="lazy" alt="icon instagram">
-			</a>
-			<a href="https://www.twitch.tv/maakyno">
-				<img src="img/reseau/logos_twitch.svg" width="31" height="33" loading="lazy" alt="icon-twitch">
-			</a>
-		
-		
-		</span>
-		<p class="litle_title">
-			© Equerre Teddy 2022</p>
-	</div>
-</div></footer><dialog class=" js-popin popin">
-<div class="popin__container">
-	<header class="popin__header">
-		<h2 class="popin__title js-title">Maquette portfolio</h2>
-		<button class="popin__close js-btn">✖</button>
-	</header>
-	<div class="popin__img">
+</body>
 
-		<img class="js-img" src="img/portfolio/full-size/portfolio-offi-460w.png" alt="maquette portfolio" width="1920" height="1080" loading="lazy">
+</html>
+</main>
+<footer class="footer top_circle top_circle--white">
+	<div class="content">
+		<div class="footer__content">
+			<img class="header__nav-logo" src="img/logo/logo.svg" loading="lazy" width="221" height="47" alt="logo">
+			<span class="footer__content-reseau">
+				<a href="https://www.linkedin.com/in/teddy-equerre-514a781a2">
+					<img src="img/reseau-sociaux/linkedin.svg" loading="lazy" width="43" height="43"
+						alt="icon-linkedin">
+				</a>
+				<a href="https://github.com/maakino">
+					<img src="img/reseau/akar-icons_github-fill.svg" width="31" height="31" loading="lazy"
+						alt="icon-github">
+				</a>
+				<a href="https://www.instagram.com/ty_developper/">
+					<img src="img/reseau-sociaux/instagram.svg" width="44" height="30" loading="lazy"
+						alt="icon instagram">
+				</a>
+				<a href="https://www.twitch.tv/maakyno">
+					<img src="img/reseau/logos_twitch.svg" width="31" height="33" loading="lazy" alt="icon-twitch">
+				</a>
+
+
+			</span>
+			<p class="litle_title">
+				© Equerre Teddy 2022</p>
+		</div>
 	</div>
-</div></dialog><script src="js/script.js"></script></body></html>
+</footer>
+<dialog class=" js-popin popin">
+	<div class="popin__container">
+		<header class="popin__header">
+			<h2 class="popin__title js-title">Maquette portfolio</h2>
+			<button class="popin__close js-btn">✖</button>
+		</header>
+		<div class="popin__img">
+
+			<img class="js-img" src="img/portfolio/full-size/portfolio-offi-460w.png" alt="maquette portfolio"
+				width="1920" height="1080" loading="lazy">
+		</div>
+	</div>
+</dialog>
+<script src="js/script.js"></script>
+</body>
+
+</html>
