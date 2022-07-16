@@ -15,7 +15,7 @@
             }
             @include media(large) {
                 max-width: 460px;
-              
+
             }
         }
     }
@@ -24,7 +24,6 @@
         grid-template-columns: repeat(1, 1fr);
         flex-wrap: wrap;
         gap: 26px;
-      
         img{
             height: 100%;
         }
@@ -36,6 +35,6 @@
             grid-template-columns: repeat(3, 1fr);
         }
             text-align: center;
-         
+
     }
 }
