@@ -1,5 +1,4 @@
 .about {
-    
     &-content{
         max-width: 1920px;
         margin: auto;
@@ -11,7 +10,7 @@
             flex-direction: row;
         }
     }
-  
+
     &__content {
         @include media(large) {
             height: auto;
