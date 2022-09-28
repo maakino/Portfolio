@@ -1,5 +1,5 @@
 .about {
-    
+
     &-content{
         max-width: 1920px;
         margin: auto;
@@ -11,13 +11,13 @@
             flex-direction: row;
         }
     }
-  
+
     &__content {
         @include media(large) {
             height: auto;
             display: flex;
             flex-direction: column;
-            margin-top: 70px;
+
         }
     }
     &__user {
@@ -43,6 +43,19 @@
         img {
             margin-right: 42px;
             max-width: 78px;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        &-title{
+            color: #094067;
+            font-size: 20px;
+            font-family: var(--Raleway-ExtraBold);
+        }
+        a{
+            color: #094067;;
         }
     }
     h2 {
