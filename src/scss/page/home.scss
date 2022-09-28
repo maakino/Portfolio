@@ -4,7 +4,7 @@
 
     @include media(medium) {
         padding: 39px 121px 1px;
-              
+
     }
     @include media(large){
         padding: 119px 121px 1px;
@@ -28,7 +28,7 @@
                 font-size: 44px;
             }
             @include media(large) {
-                font-size: 48px;
+                font-size: 62px;
             }
         }
         h1 {
