@@ -23,7 +23,7 @@
         p:first-child {
             font-size: 25px;
             color: var(--btn-color);
-            font-family: var(--Raleway-Black);
+            font-family: var(--Raleway-SemiBold);
             @include media(small) {
                 font-size: 44px;
             }
