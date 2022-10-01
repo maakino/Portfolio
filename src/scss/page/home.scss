@@ -21,7 +21,7 @@
             align-items: center;
         }
         p:first-child {
-            font-size: 25px;
+            font-size: 40px;
             color: var(--btn-color);
             font-family: var(--Raleway-SemiBold);
             @include media(small) {
@@ -36,7 +36,7 @@
                 font-size: 60px;
                 max-width: 396px;
             }
-            font-size: 40px;
+            font-size: 36px;
             max-width: 264px;
             font-family: var(--Raleway-Black);
             color: var(--btn-secondary-color);
@@ -62,7 +62,7 @@
     &__containt-titre {
         display: flex;
         flex-direction: column;
-        gap: 37px;
+        gap: 22px;
         @include media(small){
             gap: 25px;
         }
