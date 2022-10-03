@@ -10,12 +10,14 @@
         img {
             cursor: pointer;
             width: 100%;
+            @include media(small) {
+                width: 80%;
+            }
             @include media(medium) {
                 width: 100%;
             }
             @include media(large) {
                 max-width: 460px;
-
             }
         }
     }
