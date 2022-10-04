@@ -7,7 +7,7 @@
 
     }
     @include media(large){
-        padding: 119px 121px 1px;
+        padding: 84px 121px 51px;
     }
     &__containt {
         display: flex;
@@ -23,7 +23,7 @@
         p:first-child {
             font-size: 40px;
             color: var(--btn-color);
-            font-family: var(--Raleway-SemiBold);
+            font-family: var(--Raleway-Bold);
             @include media(small) {
                 font-size: 44px;
             }
@@ -118,18 +118,18 @@
         }
     }
     &__btn-contact {
-        background-color: var(--btn-color);
+        background-color: #ED7B84;
         color: white !important;
     }
     &__btn-project {
         background-color: #fff;
-        color: var(--btn-color);
+        color: #ED7B84;
     }
     .home__btn-project:hover {
         @include media(large) {
-            background-color: var(--btn-color);
-            border: none;
-            color: #fff !important;
+            background-color: transparent;
+            border: 1px solid #ED7B84;
+            color: #ED7B84 !important;
         }
     }
     &__arrow {
