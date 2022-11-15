@@ -1,165 +1,164 @@
 .home {
-    margin: auto;
-    padding: 1px 21px 24px 25px;
+  margin: auto;
+  padding: 1px 21px 24px 25px;
 
+  @include media(medium) {
+    padding: 39px 121px 1px;
+  }
+  @include media(large) {
+    padding: 84px 121px 51px;
+  }
+  &__containt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    margin-bottom: 23px;
     @include media(medium) {
-        padding: 39px 121px 1px;
-
+      flex-direction: row-reverse;
+      justify-content: space-between !important;
+      align-items: center;
     }
-    @include media(large){
-        padding: 84px 121px 51px;
+    p:first-child {
+      font-size: 40px;
+      color: var(--txt-color);
+      font-family: "Raleway";
+      font-weight: 700;
+      @include media(small) {
+        font-size: 44px;
+      }
+      @include media(large) {
+        font-size: 62px;
+      }
+      span {
+        font-weight: bold;
+      }
     }
-    &__containt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center !important;
-        margin-bottom: 23px;
-        @include media(medium) {
-            flex-direction: row-reverse;
-            justify-content: space-between !important;
-            align-items: center;
-        }
-        p:first-child {
-            font-size: 40px;
-            color: var(--btn-color);
-            font-family: var(--Raleway-Bold);
-            @include media(small) {
-                font-size: 44px;
-            }
-            @include media(large) {
-                font-size: 62px;
-            }
-        }
-        h1 {
-            @include media(small) {
-                font-size: 60px;
-                max-width: 396px;
-            }
-            font-size: 36px;
-            max-width: 264px;
-            font-family: var(--Raleway-Black);
-            color: var(--btn-secondary-color);
-            font-weight: 900;
-        }
-        @include media(medium) {
-            font-size: 60px;
-        }
-        @include media(large) {
-            font-size: 64px;
-        }
+    h1 {
+      @include media(small) {
+        font-size: 60px;
+        max-width: 396px;
+      }
+      font-size: 36px;
+      max-width: 264px;
+      font-family: "Raleway";
+      font-weight: 800;
+      color: var(--btn-color);
+      line-height: 1.2;
     }
-    &__containt-img {
-        max-width: 245px;
-        width: 100%;
-        @include media(small) {
-            max-width: 413px;
-        }
-        @include media(large) {
-            max-width: 564px;
-        }
+    @include media(medium) {
+      font-size: 60px;
     }
-    &__containt-titre {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
-        @include media(small){
-            gap: 25px;
-        }
+    @include media(large) {
+      font-size: 64px;
     }
-    &__containt-name {
-        color: var(--btn-secondary-color);
-        font-family: "Raleway-Black";
+  }
+  &__containt-img {
+    max-width: 245px;
+    width: 100%;
+    @include media(small) {
+      max-width: 413px;
     }
-    &__containt-slogan {
-        font-size: 20px;
-        font-family: var(--Raleway-Medium);
-        @include media(small) {
-            font-size: 22px;
-        }
-        @include media(large) {
-            font-size: 24px;
-        }
+    @include media(large) {
+      max-width: 564px;
     }
-    &__containt-reseau {
-        img {
-            max-height: 30px;
-            @include media(medium) {
-                max-height: 41px;
-            }
-            @include media(large) {
-                animation-name: glissement;
-                animation-duration: 2s;
-                animation-name: glissement;
-                animation-timing-function: ease;
-            }
-        }
-        img:hover {
-            transform: scale(1.2);
-            transition-duration: 0.5s;
-        }
-        width: 187px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include media(medium) {
-            width: 226px;
-        }
+  }
+  &__containt-titre {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    @include media(small) {
+      gap: 25px;
     }
-    &__containt-btn {
-        width: 261px;
-        display: flex;
-        justify-content: space-between;
-        @include media(small) {
-            width: 270px;
-        }
-        @include media(medium) {
-            width: 353px;
-        }
+  }
+  &__containt-name {
+    color: var(--btn-secondary-color);
+    font-family: "Raleway";
+    font-weight: 900;
+  }
+  &__containt-slogan {
+    font-size: 20px;
+    font-family: var(--Raleway-Medium);
+    font-family: "Raleway";
+    font-weight: 500;
+    @include media(small) {
+      font-size: 22px;
     }
-    &__btn-contact {
-        background-color: #ED7B84;
-        color: white !important;
+    @include media(large) {
+      font-size: 24px;
     }
-    &__btn-project {
-        background-color: #fff;
-        color: #ED7B84;
+  }
+  &__containt-reseau {
+    img {
+      max-height: 30px;
+      @include media(medium) {
+        max-height: 41px;
+      }
+      @include media(large) {
+        animation-name: glissement;
+        animation-duration: 2s;
+        animation-name: glissement;
+        animation-timing-function: ease;
+      }
     }
-    .home__btn-project:hover {
-        @include media(large) {
-            background-color: transparent;
-            border: 1px solid #ED7B84;
-            color: #ED7B84 !important;
-        }
+    img:hover {
+      transform: scale(1.2);
+      transition-duration: 0.5s;
     }
-    &__arrow {
-        width: 22px;
-        height: 26px;
-        img {
-            display: block;
-            margin: auto;
-            margin-top: 47px;
-            animation-duration: 2s;
-            animation-name: glissement;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-            @include media(small) {
-                margin-top: 28px;
-            }
-            @include media(medium) {
-                margin-top: 78px;
-            }
-        }
+    width: 187px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media(medium) {
+      width: 226px;
     }
+  }
+  &__containt-btn {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+    @include media(small) {
+      width: 270px;
+    }
+    @include media(medium) {
+      width: 353px;
+    }
+  }
+  .home__btn-project:hover {
+    @include media(large) {
+      background-color: transparent;
+      border: 1px solid #ed7b84;
+      color: #ed7b84 !important;
+    }
+  }
+  &__arrow {
+    width: 22px;
+    height: 26px;
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 47px;
+      animation-duration: 2s;
+      animation-name: glissement;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      @include media(small) {
+        margin-top: 28px;
+      }
+      @include media(medium) {
+        margin-top: 78px;
+      }
+    }
+  }
 }
 @keyframes glissement {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -1,0 +1,15 @@
+.title{
+    font-size: 29px;
+    font-family: "Raleway";
+    font-weight: 800;
+    text-align: center;
+    color: var(--title-primary-color);
+    margin-bottom: 23px;
+    @include media (small){
+        font-size: 36px;
+    }
+    &-secondary{
+        color: var(--title-secondary-color);
+    }
+}
+

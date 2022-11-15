@@ -1,42 +1,63 @@
+/* Roboto */
 @font-face {
-    font-family: "roboto-Medium";
-    src: url("../font/roboto/Roboto-Medium.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "roboto-Regular";
+    font-family: "Roboto";
     src: url("../font/roboto/Roboto-Regular.ttf");
+    font-weight: 400;
     font-display: swap;
 }
+
 @font-face {
-    font-family: "Raleway-Black";
-    src: url("../font/raleway/Raleway-Black.ttf");
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Medium.ttf");
+    font-weight: 500;
     font-display: swap;
 }
+
+/* Raleway */
 @font-face {
-    font-family: "Raleway-Bold";
-    src: url("../font/raleway/Raleway-Bold.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Raleway-ExtraBold";
-    src: url("../font/raleway/Raleway-ExtraBold.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Raleway-Medium";
-    src: url("../font/raleway/Raleway-Medium.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Raleway-SemiBold";
-    src: url("../font/raleway/Raleway-SemiBold.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Raleway-Regular";
+    font-family: "Raleway";
     src: url("../font/raleway/Raleway-Regular.ttf");
     font-display: swap;
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-Medium.ttf");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-SemiBold.ttf");
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-Bold.ttf");
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-ExtraBold.ttf");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway/Raleway-Black.ttf");
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+
+
+
 
 

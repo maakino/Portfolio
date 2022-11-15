@@ -8,72 +8,15 @@ html {
     background-color: white;
     --btn-color: #3da9fc;
     --btn-secondary-color: #094067;
-    --roboto-Medium: "roboto-Medium", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --roboto-Regular: "roboto-Regular", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-Black: "Raleway-Black", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-Bold: "Raleway-Bold", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-ExtraBold: "Raleway-ExtraBold", sans-serif, Arial, Helvetica, sans-serif, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-Medium: "Raleway-Medium", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-Regular: "Raleway-Regular", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --Raleway-SemiBold: "Raleway-SemiBold", sans-serif, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 main {
     margin-top: 27px;
     @include media(small) {
         /* margin:10px; */
     }
 }
-.btn {
-    width: 119px;
-    height: 43px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    border-radius: 2px;
-    filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
-    text-decoration: none;
-    font-family: var(--Raleway-ExtraBold);
-    transition: background-color 0.3s;
-    @include media(small) {
-        max-width: 128px;
-        width: 100%;
-        font-size: 20px;
-    }
-    @include media(medium) {
-        max-width: 162px;
-        font-size: 24px;
-        height: 58px;
-    }
-}
-@include media(medium) {
-    .btn:hover {
-        background-color: transparent;
-        border: 1px solid #ED7B84;
-        color: #ED7B84 !important;
-    }
-}
-h2 {
-    font-size: 29px;
-    font-family: var(--Raleway-ExtraBold);
-    text-align: center;
-    color: #094067;
-    margin-bottom: 23px;
-    @include media(small) {
-        font-size: 36px;
-    }
-    @include media(medium) {
-        font-size: 36px;
-    }
-}
+
 section {
     padding: 25px 21px 25px 25px;
     @include media(small) {

@@ -1,0 +1,44 @@
+.btn {
+    width: 119px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 2px;
+    filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 700;
+
+    transition: background-color 0.3s;
+    background-color: var(--links-color);
+    color: var(--primary-color);
+    @include media(small) {
+        max-width: 128px;
+        width: 100%;
+        font-size: 20px;
+    }
+    @include media(medium) {
+        max-width: 162px;
+        font-size: 24px;
+        height: 58px;
+    }
+}
+@include media(medium) {
+    .btn:hover {
+        background-color: transparent;
+        border: 1px solid var(--links-color);
+        color: var(--links-color);
+    }
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--links-color);
+    border: 1px solid var(--links-color);
+    &:hover{
+        background-color: var(--links-color);
+        color: var(--primary-color);
+        border: transparent;
+    }
+}
